@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ser_Excel_2020", "Ser_Excel_2020\Ser_Excel_2020.csproj", "{F10BD301-1F62-4707-9567-ED97441442F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F10BD301-1F62-4707-9567-ED97441442F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10BD301-1F62-4707-9567-ED97441442F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10BD301-1F62-4707-9567-ED97441442F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10BD301-1F62-4707-9567-ED97441442F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51193D5C-E4BF-4DD6-9731-10F3A32D997E}
+	EndGlobalSection
+EndGlobal

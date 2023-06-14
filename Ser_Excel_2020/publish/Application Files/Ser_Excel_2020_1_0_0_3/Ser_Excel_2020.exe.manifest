@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Ser_Excel_2020.exe" version="1.0.0.3" publicKeyToken="5a8bea029254dc4a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Ser_Excel_2020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Ser_Excel_2020.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de UAC
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar Virtualización de archivos y Registro para compatibilidad con 
+         versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EPPlus.dll" size="1298432">
+      <assemblyIdentity name="EPPlus" version="4.5.3.2" publicKeyToken="EA159FDAA78159A1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wyzvvR6gUe068G5/ud1VhZimEvBCFkFAzYvnIqNRvGM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ser_Excel_2020.exe" size="28136">
+      <assemblyIdentity name="Ser_Excel_2020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SqiMm/IDS9BlaOI0AHiUkdvhQyY0036I/pmW/UAwOmU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Ser_Excel_2020.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SISTEMASGYG\edwin.diaz" issuerKeyHash="57b074cbf399b36eae7aed6b4de13001d1e26ef6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QyxfoV7j15eK9QlxekZDL8tuDR5lwHBD/XqcbIIHd7o=</DigestValue></Reference></SignedInfo><SignatureValue>rtryPpRgc4vssGuulfp5yPBXbjVXZROhsfCJYfqm70NvRQ1xU/j+VGxhaNRqIRDN+tlkO3cgzkN3IVxE28PLxVhLtH8THttDelsQjGvblVgYvIaKxof9gETdYh1d5ZyoZ5tzgc7p2YonoYYnAXRGXbkrh5UUxWNrfFwgYvPwZW0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>z9ZRWLHWJctId38jYFZWS37Of+lFAMNPkr7+gpK2q4xAWTuPbjhfCLElFFlFgTx560zVEHNQBOfXSB34hCQGu6hpILnbHRp+T45Kev33aiJRUYWa339z2gfmBLqFOa/XPVpw5TWfdUi0befE9R0Rjgo5BdTjFaWA7c19bcP2aNk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ba7707826c9c7afd4370c0651e0d6ecb2f43467a7109f58a97d7e35ea15f2c43" Description="" Url=""><as:assemblyIdentity name="Ser_Excel_2020.exe" version="1.0.0.3" publicKeyToken="5a8bea029254dc4a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SISTEMASGYG\edwin.diaz</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>XHqGOd67ow81AZzuzjqw5b/oHca1i67Z3zvl0K9DXok=</DigestValue></Reference></SignedInfo><SignatureValue>K+aPvTESE/b4SLH9gz2EHuSKx+SqI9VlDi/7FwphdgGWQ9NqKG/RILZdhXmfaAgha1mTax7M/yxa+YQY5gfu2j154G2lU8Ij/ZLVCIbefyj7ksSO1E1Y/JthMH+dxFCoKDDqaZ3YnDUOemVg0ZRVjUxzhYlU+si62I7FNfsibQs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>z9ZRWLHWJctId38jYFZWS37Of+lFAMNPkr7+gpK2q4xAWTuPbjhfCLElFFlFgTx560zVEHNQBOfXSB34hCQGu6hpILnbHRp+T45Kev33aiJRUYWa339z2gfmBLqFOa/XPVpw5TWfdUi0befE9R0Rjgo5BdTjFaWA7c19bcP2aNk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQEbt73nQNVJ1J19DRKkuT4DANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwAUwBJAFMAVABFAE0AQQBTAEcAWQBHAFwAZQBkAHcAaQBuAC4AZABpAGEAejAeFw0xOTExMTMxNTIyMTdaFw0yMDExMTIyMTIyMTdaMDcxNTAzBgNVBAMeLABTAEkAUwBUAEUATQBBAFMARwBZAEcAXABlAGQAdwBpAG4ALgBkAGkAYQB6MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDP1lFYsdYly0h3fyNgVlZLfs5/6UUAw0+Svv6CkrarjEBZO49uOF8IsSUUWUWBPHnrTNUQc1AE59dIHfiEJAa7qGkgudsdGn5Pjkp6/fdqIlFRhZrff3PaB+YEuoU5r9c9WnDlNZ91SLRt58T1HRGOCjkF1OMVpYDtzX1tw/Zo2QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEmj8PFDOyDWYshG1xf8vUq5EWqoLyYgtwg5kGjS7wf9OYRQzUIxPiHOpOpTkQW+Lv8sc1ixjqdUH2W0CQEBs2TUvIeqZ2DfXS0Sb5CQ94BULh9Zqr58HQYsYS1PzuzldasbIKaaUU9KLdSJX6AmaGY81tyiNFGVO7YtLSAd9Klk</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
