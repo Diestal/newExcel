@@ -1,0 +1,78 @@
+﻿Ser_Excel_____26/06/2023 1:31:11 a. m.
+Ser_Excel_____26/06/2023 1:31:11 a. m.
+Ser_Excel_____26/06/2023 1:31:12 a. m.
+Ser_Excel_____26/06/2023 1:31:12 a. m.
+26/06/2023 1:31:13 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:38:11 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:38:13 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 1:43:01 a. m.
+Ser_Excel_____26/06/2023 1:43:01 a. m.
+Ser_Excel_____26/06/2023 1:43:01 a. m.
+Ser_Excel_____26/06/2023 1:43:01 a. m.
+26/06/2023 1:43:01 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:52:30 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:52:32 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 1:53:38 a. m.
+Ser_Excel_____26/06/2023 1:53:38 a. m.
+Ser_Excel_____26/06/2023 1:53:41 a. m.
+Ser_Excel_____26/06/2023 1:53:41 a. m.
+26/06/2023 1:53:45 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 2:00:06 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 2:00:07 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 2:18:09 a. m.
+Ser_Excel_____26/06/2023 2:18:09 a. m.
+Ser_Excel_____26/06/2023 2:18:09 a. m.
+Ser_Excel_____26/06/2023 2:18:09 a. m.
+26/06/2023 2:27:49 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 2:47:09 a. m.
+Ser_Excel_____26/06/2023 2:47:09 a. m.
+Ser_Excel_____26/06/2023 2:47:09 a. m.
+Ser_Excel_____26/06/2023 2:47:09 a. m.
+26/06/2023 2:56:38 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 11:59:20 a. m.
+Ser_Excel_____26/06/2023 11:59:20 a. m.
+Ser_Excel_____26/06/2023 11:59:22 a. m.
+Ser_Excel_____26/06/2023 11:59:22 a. m.
+26/06/2023 12:04:38 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************

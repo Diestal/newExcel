@@ -1,0 +1,130 @@
+﻿Ser_Excel_____28/06/2023 7:54:56 a. m.
+Ser_Excel_____28/06/2023 7:54:56 a. m.
+Ser_Excel_____28/06/2023 7:54:57 a. m.
+Ser_Excel_____28/06/2023 7:54:57 a. m.
+28/06/2023 7:55:19 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____28/06/2023 1:11:02 p. m.
+Ser_Excel_____28/06/2023 1:11:02 p. m.
+Ser_Excel_____28/06/2023 1:11:29 p. m.
+Ser_Excel_____28/06/2023 1:11:29 p. m.
+Ser_Excel_____28/06/2023 1:11:29 p. m.
+Ser_Excel_____28/06/2023 1:11:29 p. m.
+28/06/2023 1:11:44 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/01/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000008846018000000000000000000000000000000 00000000000000 00000262482406-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 345
+********************************************************************************
+Ser_Excel_____28/06/2023 1:14:35 p. m.
+Ser_Excel_____28/06/2023 1:14:35 p. m.
+Ser_Excel_____28/06/2023 1:14:35 p. m.
+Ser_Excel_____28/06/2023 1:14:35 p. m.
+28/06/2023 1:14:49 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/02/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000009689018000000000000000000000000000000 00000000000000 00000263325406-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 345
+********************************************************************************
+Ser_Excel_____28/06/2023 1:15:58 p. m.
+Ser_Excel_____28/06/2023 1:15:58 p. m.
+Ser_Excel_____28/06/2023 1:15:59 p. m.
+Ser_Excel_____28/06/2023 1:15:59 p. m.
+28/06/2023 1:17:15 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/02/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000009689018000000000000000000000000000000 00000000000000 00000263325406-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 345
+********************************************************************************
+Ser_Excel_____28/06/2023 1:26:49 p. m.
+Ser_Excel_____28/06/2023 1:26:49 p. m.
+Ser_Excel_____28/06/2023 1:26:50 p. m.
+Ser_Excel_____28/06/2023 1:26:50 p. m.
+28/06/2023 1:27:23 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/02/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000009689018000000000000000000000000000000 00000000000000 00000263325406. La celda límite es: A1023-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____28/06/2023 1:30:48 p. m.
+Ser_Excel_____28/06/2023 1:30:48 p. m.
+Ser_Excel_____28/06/2023 1:30:48 p. m.
+Ser_Excel_____28/06/2023 1:30:48 p. m.
+28/06/2023 1:31:27 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/02/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000009689018000000000000000000000000000000 00000000000000 00000263325406. La celda límite es: A1023 fila: 2 columna24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____28/06/2023 1:31:55 p. m.
+Ser_Excel_____28/06/2023 1:31:55 p. m.
+Ser_Excel_____28/06/2023 1:31:56 p. m.
+Ser_Excel_____28/06/2023 1:31:56 p. m.
+28/06/2023 1:33:34 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 00300000012000548108ADQUISICIàN DE PROYECTOS COLS0000003200000000000000002020/02/05000000000000000000000000000000000000000000000Facturacion30 00000253000000000000000843000000000000000000 00000009689018000000000000000000000000000000 00000000000000 00000263325406. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____28/06/2023 1:34:39 p. m.
+Ser_Excel_____28/06/2023 1:34:39 p. m.
+Ser_Excel_____28/06/2023 1:34:40 p. m.
+Ser_Excel_____28/06/2023 1:34:40 p. m.
+28/06/2023 1:34:57 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+28/06/2023 1:35:13 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 572
+********************************************************************************
+Ser_Excel_____28/06/2023 1:41:09 p. m.
+Ser_Excel_____28/06/2023 1:41:09 p. m.
+Ser_Excel_____28/06/2023 1:41:10 p. m.
+Ser_Excel_____28/06/2023 1:41:10 p. m.
+28/06/2023 1:41:41 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 285. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____28/06/2023 4:53:28 p. m.
+Ser_Excel_____28/06/2023 4:53:28 p. m.
+Ser_Excel_____28/06/2023 4:53:29 p. m.
+Ser_Excel_____28/06/2023 4:53:29 p. m.
+28/06/2023 4:54:05 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 285. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____28/06/2023 5:01:07 p. m.
+Ser_Excel_____28/06/2023 5:01:07 p. m.
+Ser_Excel_____28/06/2023 5:01:07 p. m.
+Ser_Excel_____28/06/2023 5:01:07 p. m.
+28/06/2023 5:02:48 p. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 285. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************

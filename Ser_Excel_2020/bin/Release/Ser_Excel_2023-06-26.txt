@@ -1,0 +1,164 @@
+﻿Ser_Excel_____26/06/2023 1:41:38 a. m.
+Ser_Excel_____26/06/2023 1:41:38 a. m.
+Ser_Excel_____26/06/2023 1:41:38 a. m.
+Ser_Excel_____26/06/2023 1:41:38 a. m.
+26/06/2023 1:41:39 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 1:43:58 a. m.
+Ser_Excel_____26/06/2023 1:43:58 a. m.
+Ser_Excel_____26/06/2023 1:43:58 a. m.
+Ser_Excel_____26/06/2023 1:43:58 a. m.
+26/06/2023 1:44:00 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:50:33 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 1:50:35 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 2:00:23 a. m.
+Ser_Excel_____26/06/2023 2:00:23 a. m.
+Ser_Excel_____26/06/2023 2:00:23 a. m.
+Ser_Excel_____26/06/2023 2:00:23 a. m.
+26/06/2023 2:00:24 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 2:11:16 a. m.
+Ser_Excel_____26/06/2023 2:11:16 a. m.
+Ser_Excel_____26/06/2023 2:11:16 a. m.
+Ser_Excel_____26/06/2023 2:11:16 a. m.
+26/06/2023 2:11:16 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 2:20:28 a. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 738 -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 2:20:30 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 9:20:13 a. m.
+Ser_Excel_____26/06/2023 9:20:13 a. m.
+Ser_Excel_____26/06/2023 9:20:13 a. m.
+Ser_Excel_____26/06/2023 9:20:13 a. m.
+26/06/2023 9:24:55 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 9:25:53 a. m.
+Ser_Excel_____26/06/2023 9:25:53 a. m.
+Ser_Excel_____26/06/2023 9:25:53 a. m.
+Ser_Excel_____26/06/2023 9:25:53 a. m.
+26/06/2023 9:30:43 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 10:30:07 a. m.
+Ser_Excel_____26/06/2023 10:30:07 a. m.
+Ser_Excel_____26/06/2023 10:30:07 a. m.
+Ser_Excel_____26/06/2023 10:30:07 a. m.
+26/06/2023 10:34:34 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000034641.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 10:46:34 a. m.
+Ser_Excel_____26/06/2023 10:46:34 a. m.
+Ser_Excel_____26/06/2023 10:46:34 a. m.
+Ser_Excel_____26/06/2023 10:46:34 a. m.
+26/06/2023 10:50:56 a. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.IO.IOException: El proceso no puede obtener acceso al archivo 'C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000034641.xls' porque está siendo utilizado en otro proceso.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.File.InternalDelete(String path, Boolean checkHost)
+   en System.IO.File.Delete(String path)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 597
+********************************************************************************
+Ser_Excel_____26/06/2023 10:52:16 a. m.
+Ser_Excel_____26/06/2023 10:52:16 a. m.
+Ser_Excel_____26/06/2023 10:52:16 a. m.
+Ser_Excel_____26/06/2023 10:52:16 a. m.
+26/06/2023 10:57:39 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 11:08:55 a. m.
+Ser_Excel_____26/06/2023 11:08:55 a. m.
+Ser_Excel_____26/06/2023 11:08:55 a. m.
+Ser_Excel_____26/06/2023 11:08:55 a. m.
+26/06/2023 11:14:35 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 11:18:42 a. m.
+Ser_Excel_____26/06/2023 11:18:42 a. m.
+Ser_Excel_____26/06/2023 11:18:42 a. m.
+Ser_Excel_____26/06/2023 11:18:42 a. m.
+26/06/2023 11:23:29 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 12:06:59 p. m.
+Ser_Excel_____26/06/2023 12:06:59 p. m.
+Ser_Excel_____26/06/2023 12:06:59 p. m.
+Ser_Excel_____26/06/2023 12:06:59 p. m.
+26/06/2023 12:07:16 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.IO.IOException: El proceso no puede obtener acceso al archivo 'C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls' porque está siendo utilizado en otro proceso.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.File.InternalDelete(String path, Boolean checkHost)
+   en System.IO.File.Delete(String path)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 477
+********************************************************************************
+Ser_Excel_____26/06/2023 12:14:58 p. m.
+Ser_Excel_____26/06/2023 12:14:58 p. m.
+Ser_Excel_____26/06/2023 12:14:58 p. m.
+Ser_Excel_____26/06/2023 12:14:58 p. m.
+26/06/2023 12:15:14 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 12:40:30 p. m.
+Ser_Excel_____26/06/2023 12:40:30 p. m.
+Ser_Excel_____26/06/2023 12:40:30 p. m.
+Ser_Excel_____26/06/2023 12:40:30 p. m.
+26/06/2023 12:40:45 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 12:44:40 p. m.
+Ser_Excel_____26/06/2023 12:44:40 p. m.
+Ser_Excel_____26/06/2023 12:44:40 p. m.
+Ser_Excel_____26/06/2023 12:44:40 p. m.
+26/06/2023 12:44:53 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 12:54:13 p. m.
+Ser_Excel_____26/06/2023 12:54:13 p. m.
+Ser_Excel_____26/06/2023 12:54:13 p. m.
+Ser_Excel_____26/06/2023 12:54:13 p. m.
+26/06/2023 12:54:19 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000002812.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____26/06/2023 3:27:19 p. m.
+Ser_Excel_____26/06/2023 3:27:19 p. m.
+Ser_Excel_____26/06/2023 3:27:19 p. m.
+Ser_Excel_____26/06/2023 3:27:19 p. m.
+26/06/2023 3:27:41 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+26/06/2023 3:27:41 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.ComponentModel.Win32Exception (0x80004005): El sistema no puede encontrar el archivo especificado
+   en System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   en System.Diagnostics.Process.Start()
+   en System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 587
+********************************************************************************

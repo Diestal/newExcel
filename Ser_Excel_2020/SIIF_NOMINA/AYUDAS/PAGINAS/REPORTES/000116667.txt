@@ -1,0 +1,20 @@
+WWB030H018
+001
+002LAUREANO GOMEZ07-01-2017 - 10:25 01-01-2017AHZ 06-01-2017
+003058 - LAUREANO GOMEZ 01-01-2017 hasta  06-01-2017
+004
+005CUENTA DE AHORRO       5800487991LEIDY CAROLINA LEYTON GUENGUECC        114393819806/01/2017     01,0000              104,00              104,00                0,00ExentaVigente
+005CUENTA DE AHORRO       5800487992CARLOS OVED BUENO ESCOBARCC          1680366106/01/2017     01,0000              889,00              889,00                0,00ExentaVigente
+005CUENTA DE AHORRO       5800487993CARLOS OVED BUENO ESCOBARCC          1680366106/01/2017     01,0000                0,00                0,00                0,00Vigente
+005CUENTA DE AHORRO       5800487994MARIAGNE RENGIFO AGREDOCC        111351266906/01/2017     01,0000              841,00              841,00                0,00Vigente
+005CUENTA DE AHORRO       5800487985DALIA MARINA CABEZAS CORTESCC          6700335505/01/2017     01,0000               11,00               11,00                0,00ExentaVigente
+005CUENTA DE AHORRO       5800487984DIANA MARCELA CUARAN IBARBOCC        115193932004/01/2017     01,0000              820,00              820,00                0,00Vigente
+006 000006            2.665,00            2.665,00                0,00
+005CUENTA AHORRO BASICA       5800487989INDIVIDUALMANUEL FAUSTINO ORTIZ CABEZASCC          1670685106/01/2017     01,0000           15.000,00           15.000,00                0,00ExentaVigente
+005CUENTA AHORRO BASICA       5800487987INDIVIDUALLANDAZURI CABEZAS LEIDY DANIELACC        114397841305/01/2017     01,0000           15.000,00           15.000,00                0,00No ExentaVigente
+005CUENTA AHORRO BASICA       5800487988INDIVIDUALJENIFER  GODOY MICOLTACC        114399089905/01/2017     03,2000        2.000.000,00        2.000.000,00                0,00ExentaVigente
+006 000003        2.030.000,00        2.030.000,00                0,00
+005CUENTA YO AHORRO PARA PAP       5800487990INDIVIDUALANA GRACIELA VELEZ MIRANDACC          3127693906/01/2017     01,0000           50.000,00           50.000,00                0,00No ExentaVigente
+005CUENTA YO AHORRO PARA PAP       5800487983INDIVIDUALOSCAR JAVIER LOPEZ GARCIACC          1691643302/01/2017     01,0000           60.000,00           60.000,00                0,00No ExentaVigente
+006 000002          110.000,00          110.000,00                0,00
+007 000011        2.142.665,00        2.142.665,00                0,00

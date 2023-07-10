@@ -22,6 +22,11 @@ namespace Ser_Excel_2020
         private ExcelWorkbook libroXls;
         #endregion
 
+        #region VARIABLES EXCEL
+        private Excel.Application objExcel;
+        private Excel.Workbook objLibro;
+        #endregion
+
         #region VARIABLES CLASES
         private LOG log;
         private Datos CargaDatos;
@@ -52,7 +57,7 @@ namespace Ser_Excel_2020
 
             /*
              //////////////////////////////////////////////////////////////////////
-             Archivo MODIFICAEX, para pruebas
+             Archivo MODIFICAEX, para pruebas, se debe crear en la carpeta /DOCUMENTOS
             ------------------------------------------------------------------
              Plantilla          ->  CRINCREQ
              NombreExcel        ->  M95375.XLS
@@ -119,8 +124,8 @@ namespace Ser_Excel_2020
 
         }
 
-        //METODO PARA MERCHAR LA INFORMACIÓN DEL MACRO
-        public void guardar(string plantilla, string nombreXLS, string trama, string ruta_Timelog)
+        //METODO PARA MERCHAR LA INFORMACIÓN DEL MACRO - APLICA CON LA LIBRERÍA EPPLUS, SE DEBE CORREGIR PORQUE SE DEBE TRABAJAR CON XLSM
+        /*public void guardar(string plantilla, string nombreXLS, string trama, string ruta_Timelog)
         {
             DateTime Hora;
             string archivoXLS = "";
@@ -180,6 +185,92 @@ namespace Ser_Excel_2020
                 log.EscribeLog("El Archivo : [ " + CargaDatos.CargaCarpetaRaiz + CargaDatos.RUTAS[3].ToString() + plantilla + " ] no existe", "", true);
             }
 
+        }*/
+        public void guardar(string plantilla, string nombreXLS, string trama, string ruta_Timelog)
+        {
+            DateTime Hora;
+            string archivoXLS = "";
+            string[] vec;
+
+            archivoXLS = CargaDatos.CargaCarpetaRaiz + CargaDatos.RUTAS[1].ToString() + nombreXLS;
+            vec = trama.Split('|');
+
+            if (File.Exists(archivoXLS))
+            {
+                try
+                {
+                     //SE VERIFICA SI EXCEL ESTA INSTALADO
+                    bool isExcelInstalled = Type.GetTypeFromProgID("Excel.Application") != null ? true : false;
+                    if (isExcelInstalled)
+                    {
+                        objExcel = new Excel.Application();
+                        objLibro = objExcel.Workbooks.Open(archivoXLS);
+                        Excel.Worksheet objhoja = objExcel.Worksheets[1];
+                        objhoja.Activate();
+                        try
+                        {
+                            string Varreemplazar = "";
+                            for (int i = 0; i < vec.Length - 1; i++)
+                            {
+                                Varreemplazar = "ENV" + (i + 1).ToString("000");
+                                objLibro.Names.Item(Varreemplazar).RefersToRange.Value = vec[i];
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            log.EscribeLog("Error al reemplazar variables ", ex.ToString(), true);
+                        }
+                        objExcel.Application.DisplayAlerts = false;//Para que no muestre anuncios del programa
+                        objLibro.Save();
+                        objLibro.Close();
+                        releaseObject(objLibro);
+                        releaseObject(objExcel);
+                        log.EscribeLog("Archivo generado exitosamente !!! --> [ " + archivoXLS + " ]");
+                        
+                        //Controlador de tiempo en generar el reporte
+                        Hora = DateTime.Now;
+                        StreamWriter timelog = new StreamWriter(ruta_Timelog, true, Encoding.UTF8);
+                        timelog.WriteLine("***************************************************************************************");
+                        timelog.WriteLine("Hora de Finalización:    " + Hora.ToString("F"));//F - Friday, February 27, 2009 12:12:22 PM;
+                        timelog.Flush();
+                        timelog.Close();
+
+                        System.Environment.Exit(0);
+                    }
+                    else
+                    {
+                        log.EscribeLog("El programa Excel no esta instalado --> [ " + archivoXLS + " ]");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    log.EscribeLog("Error al crear Objeto de Excel ", ex.ToString(), true);
+                }
+            }
+            else
+            {
+                log.EscribeLog("El Archivo : [ " + CargaDatos.CargaCarpetaRaiz + CargaDatos.RUTAS[3].ToString() + plantilla + " ] no existe", "", true);
+            }
+
+        }
+
+        //LIBERAR OBJETOS
+        private void releaseObject(object obj)
+        {
+            try
+            {
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
+                obj = null;
+            }
+            catch (Exception ex)
+            {
+                obj = null;
+                log.EscribeLog("No es posible liberar el objeto --> " + ex.ToString());
+            }
+            finally
+            {
+                GC.Collect();
+            }
         }
     }
 }

@@ -29,7 +29,6 @@ C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
-C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csprojResolveAssemblyReference.cache
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
@@ -37,57 +36,106 @@ C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
 C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csprojAssemblyReference.cache
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
-C:\Users\wilder.lopez\Documents\Requerimientos\2021\Septiembre\75813\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csprojAssemblyReference.cache
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
-\\10.120.220.3\requerimientos\R000075813\Fuente modificado\Ser excel Nuevo\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
-C:\Users\daniel.rodriguez\Documents\COLSUBSIDIO\Ser excel\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
-C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\[OPTIMIZACION SER_EXCEL]\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csprojAssemblyReference.cache
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
+C:\Users\edwin.diaz\Desktop\Nuevos datos despues VACAS\OPTIMIZACION SER_EXCEL\SER_EXCEL CON EXCEL\_Fuente\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csprojAssemblyReference.cache
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
+C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Buffers.dll
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Memory.dll
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.config
+C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.config
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe.manifest
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.application
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.pdb
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Buffers.dll
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Memory.dll
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.pdb
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.xml
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\SixLabors.ImageSharp.xml
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Text.Encoding.CodePages.xml
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.config
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe.manifest
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.application
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.exe
+\\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel.pdb
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.AssemblyReference.cache
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.ResolveComReference.cache
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Buffers.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Memory.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_Excel_2020.csproj.CopyComplete
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_ExcelNV.exe.config
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_ExcelNV.exe.manifest
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_ExcelNV.application
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_ExcelNV.exe
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_ExcelNV.pdb
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_ExcelNV.exe.manifest
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_ExcelNV.application
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_ExcelNV.exe
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Debug\Ser_ExcelNV.pdb
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Python.Runtime.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Python.Runtime.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.IO.Packaging.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\System.IO.Packaging.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\EPPlus.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\EPPlus.xml
+C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml

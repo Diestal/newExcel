@@ -1,0 +1,224 @@
+﻿Ser_Excel_____25/06/2023 2:45:06 p. m.
+Ser_Excel_____25/06/2023 2:45:06 p. m.
+Ser_Excel_____25/06/2023 2:45:08 p. m.
+Ser_Excel_____25/06/2023 2:45:08 p. m.
+25/06/2023 2:49:33 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 3:08:41 p. m.
+Ser_Excel_____25/06/2023 3:08:42 p. m.
+Ser_Excel_____25/06/2023 3:08:43 p. m.
+Ser_Excel_____25/06/2023 3:08:43 p. m.
+25/06/2023 3:08:55 p. m. Ser_Excel
+No existe IMAGEN: \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\PLANTILLAS\NS100037.png -> Descripcion del Programa: 
+********************************************************************************
+Ser_Excel_____25/06/2023 3:11:21 p. m.
+Ser_Excel_____25/06/2023 3:11:21 p. m.
+Ser_Excel_____25/06/2023 3:11:22 p. m.
+Ser_Excel_____25/06/2023 3:11:22 p. m.
+25/06/2023 3:11:31 p. m. Ser_Excel
+No existe IMAGEN: \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\PLANTILLAS\NS100037.png -> Descripcion del Programa: 
+********************************************************************************
+Ser_Excel_____25/06/2023 3:16:10 p. m.
+Ser_Excel_____25/06/2023 3:16:11 p. m.
+Ser_Excel_____25/06/2023 3:16:12 p. m.
+Ser_Excel_____25/06/2023 3:16:12 p. m.
+25/06/2023 3:16:31 p. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 001-- -> Descripcion del Programa: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 300
+********************************************************************************
+Ser_Excel_____25/06/2023 4:42:14 p. m.
+Ser_Excel_____25/06/2023 4:42:15 p. m.
+Ser_Excel_____25/06/2023 4:42:15 p. m.
+Ser_Excel_____25/06/2023 4:42:15 p. m.
+25/06/2023 4:42:20 p. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 001-- -> Descripcion del Programa: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 300
+********************************************************************************
+Ser_Excel_____25/06/2023 4:48:35 p. m.
+Ser_Excel_____25/06/2023 4:48:35 p. m.
+Ser_Excel_____25/06/2023 4:48:36 p. m.
+Ser_Excel_____25/06/2023 4:48:37 p. m.
+25/06/2023 4:48:52 p. m. Ser_Excel
+No existe IMAGEN: \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\PLANTILLAS\NS100037.png -> Descripcion del Programa: 
+********************************************************************************
+Ser_Excel_____25/06/2023 4:57:02 p. m.
+Ser_Excel_____25/06/2023 4:57:03 p. m.
+Ser_Excel_____25/06/2023 4:57:06 p. m.
+Ser_Excel_____25/06/2023 4:57:06 p. m.
+25/06/2023 4:57:13 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 4:57:13 p. m. Ser_Excel
+Deben haber 4 Parámetros para determinar las dimensiones de la IMAGEN, en el archivo: \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\PLANTILLAS\NS100037.txt -> Descripcion del Programa: 
+********************************************************************************
+Ser_Excel_____25/06/2023 5:01:01 p. m.
+Ser_Excel_____25/06/2023 5:01:01 p. m.
+Ser_Excel_____25/06/2023 5:01:02 p. m.
+Ser_Excel_____25/06/2023 5:01:02 p. m.
+25/06/2023 5:02:10 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:06:55 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:07:02 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 5:11:32 p. m.
+Ser_Excel_____25/06/2023 5:11:32 p. m.
+Ser_Excel_____25/06/2023 5:11:34 p. m.
+Ser_Excel_____25/06/2023 5:11:34 p. m.
+25/06/2023 5:14:29 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:19:13 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:19:43 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 5:45:49 p. m.
+Ser_Excel_____25/06/2023 5:45:49 p. m.
+Ser_Excel_____25/06/2023 5:45:52 p. m.
+Ser_Excel_____25/06/2023 5:45:52 p. m.
+25/06/2023 5:46:02 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:50:53 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 5:51:05 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 6:46:37 p. m.
+Ser_Excel_____25/06/2023 6:46:37 p. m.
+Ser_Excel_____25/06/2023 6:46:37 p. m.
+Ser_Excel_____25/06/2023 6:46:37 p. m.
+25/06/2023 6:46:40 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 6:51:49 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 6:52:02 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 6:59:06 p. m.
+Ser_Excel_____25/06/2023 6:59:06 p. m.
+Ser_Excel_____25/06/2023 6:59:07 p. m.
+Ser_Excel_____25/06/2023 6:59:07 p. m.
+25/06/2023 6:59:09 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:04:12 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 750 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:04:28 p. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__40.MoveNext() en \\10.120.220.3\requerimientos\UNIRPDF\David_Castellanos\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 598
+********************************************************************************
+Ser_Excel_____25/06/2023 7:22:02 p. m.
+Ser_Excel_____25/06/2023 7:22:02 p. m.
+Ser_Excel_____25/06/2023 7:22:03 p. m.
+Ser_Excel_____25/06/2023 7:22:03 p. m.
+25/06/2023 7:22:05 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 732 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:27:12 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 732 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:27:14 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____25/06/2023 7:28:18 p. m.
+Ser_Excel_____25/06/2023 7:28:18 p. m.
+Ser_Excel_____25/06/2023 7:28:19 p. m.
+Ser_Excel_____25/06/2023 7:28:19 p. m.
+25/06/2023 7:28:24 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 732 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:33:50 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 732 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 7:33:51 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E000018601.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____25/06/2023 8:26:12 p. m.
+Ser_Excel_____25/06/2023 8:26:12 p. m.
+Ser_Excel_____25/06/2023 8:26:13 p. m.
+Ser_Excel_____25/06/2023 8:26:13 p. m.
+25/06/2023 8:26:15 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 737 -> Descripcion del Programa:  
+********************************************************************************
+25/06/2023 8:31:06 p. m. Ser_Excel
+No es posible liberar el objeto --> System.ArgumentException: El tipo de objeto debe ser __ComObject o estar derivado de __ComObject.
+Nombre del parámetro: o
+   en System.Runtime.InteropServices.Marshal.ReleaseComObject(Object o)
+   en Ser_Excel_2020.CrearExcel.releaseObject(Object obj) en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 737 -> Descripcion del Programa:  
+********************************************************************************

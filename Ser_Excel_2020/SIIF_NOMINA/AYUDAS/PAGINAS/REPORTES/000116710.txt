@@ -1,0 +1,15 @@
+WWB030H018
+001
+002SANTA LUCIA07-01-2017 - 11:39 05-01-2017EFC 06-01-2017
+003035 - SANTA LUCIA 05-01-2017 hasta  06-01-2017
+004
+005CUENTA DE AHORRO       3500487805MAGDA PAOLA GARCIA NARVAEZCC          5282184806/01/2017     01,0000              802,00              802,00                0,00Vigente
+005CUENTA DE AHORRO       3500487802LAURA MARIA ROMERO NARANJOCC          3961454905/01/2017     01,0000               52,00               52,00                0,00ExentaVigente
+006 000002              854,00              854,00                0,00
+005CUENTA AHORRO BASICA       3500487804INDIVIDUALJUAN ARTURO CALDERON RODRIGUEZCC          7961980206/01/2017     01,0000           15.000,00           15.000,00                0,00No ExentaVigente
+005CUENTA AHORRO BASICA       3500487806INDIVIDUALWALTHER GIOVANNI CABRERA FRAILECC        101422519406/01/2017     01,0000           15.000,00           15.000,00                0,00No ExentaVigente
+005CUENTA AHORRO BASICA       3500487807INDIVIDUALDURAN GARCIA MARIA FERNANDATI        100093803606/01/2017     01,0000           15.000,00           15.000,00                0,00ExentaVigente
+006 000003           45.000,00           45.000,00                0,00
+005CUENTA YO AHORRO PARA PAP       3500487803INDIVIDUALLEIDY KATHERIN RODRIGUEZ TORRESCC        101241627306/01/2017     01,0000           30.000,00           30.000,00                0,00No ExentaVigente
+006 000001           30.000,00           30.000,00                0,00
+007 000006           75.854,00           75.854,00                0,00

@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace Ser_Excel_2020
 {
-    class Ser_Excel
+    public class Ser_Excel
     {
         #region Variables
         private string RutaAplicacion = System.AppDomain.CurrentDomain.BaseDirectory.ToString();
-        private string[] param;
+        private string[] _param;
         private LOG log;
         private Datos CargaDatos;
         private GuardarMacro guardaExcelMacro;
         private CrearExcel reporteExcel;
+        public string rutaPDF;
         object misValue = System.Reflection.Missing.Value;
         #endregion
-        public Ser_Excel()
+        public Ser_Excel(string[] param)
         {
             StreamWriter timelog;
             /* 
@@ -45,14 +43,20 @@ namespace Ser_Excel_2020
             string rtaLog = RutaAplicacion.Replace(@"SIIFNET\", "Documentos\\LOGS\\");
             ruta_Timelog = RutaAplicacion + "TimeLog.txt";
 
-            param = Environment.GetCommandLineArgs();
-            param = new string[] { @"C:\Users\daniel.rodriguez\Desktop\Ser_Excel_2020\Ser_Excel_2020\bin\Debug", "Y00001860157642" };
-            //param = new string[]{ "", "Y0000186015525" };
+            //param = Environment.GetCommandLineArgs();
+
+            //------------------------------------
+            //--Para Pruebas, Excel normal
+            //------------------------------------
+            param = new string[]{ @"C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe", "P00000000057649" };//El separador no se visualiza en este editor
+            /*param = new string[] { @"C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe", "P00001860118602" };*///El separador no se visualiza en este editor
+            //_param = param;
+            //------------------------------------
+            //--Para Pruebas, Excel con Macros
+            //------------------------------------
+            //param = new string[]{ "Ruta Ser_Excel", "X"};//Para pruebas
             CargaDatos = new Datos();
-
-            /*PRUEBAS EXCEL CON MACROS*/
-            //param[0] = "X";
-
+            
             //***************************************************************
             log = new LOG(rtaLog, "Ser_Excel");
 
@@ -67,7 +71,7 @@ namespace Ser_Excel_2020
 
             if(param.Length > 0)
             {
-                if (param[0].Substring(0, 1) == "X")
+                if (param[1].Substring(0, 1) == "X")
                 {
                     //EXCEL CON MACROS
                     guardaExcelMacro = new GuardarMacro();
@@ -77,7 +81,7 @@ namespace Ser_Excel_2020
                 {
                     //CREACIÓN DE REPORTES MAS UTILIZADO
                     reporteExcel = new CrearExcel();
-                    reporteExcel.crear_reporte(param, ruta_Timelog);
+                    rutaPDF = reporteExcel.crear_reporte(param, ruta_Timelog).Result;
                 }
             }
             else

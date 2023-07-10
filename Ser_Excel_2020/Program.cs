@@ -12,7 +12,9 @@ namespace Ser_Excel_2020
         [STAThread]
         static void Main(string[] args)
         {
-            Ser_Excel ser_Excel = new Ser_Excel();
+            var parametro = new string[]{ @"", "" };//El separador no se visualiza en este editor
+
+            Ser_Excel ser_Excel = new Ser_Excel(parametro);
         }
     }
 }

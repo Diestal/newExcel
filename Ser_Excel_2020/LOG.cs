@@ -23,7 +23,7 @@ namespace Ser_Excel_2020
         {
             try
             {
-                RtaLog = RtaLog + "\\" + NombreAplicacion + ".txt";
+                RtaLog = RtaLog + "\\" + NombreAplicacion + "_" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
                 if (File.Exists(RtaLog))
                 {
                     RutaLog = RtaLog;
@@ -43,10 +43,13 @@ namespace Ser_Excel_2020
                     Escribe.Close();
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 rutaCorrecta = false;
-                Resultado = "No se pudo comprobar la ruta del log";
+                Escribe = new StreamWriter(RutaLog, true);
+                Escribe.WriteLine(DateTime.Now.ToString() + " " + NomAplicacion);
+                Escribe.WriteLine(ex.ToString());
+                Escribe.Close();
                 Escribe.Close();
             }
         }
@@ -70,9 +73,12 @@ namespace Ser_Excel_2020
                     Resultado = "No se escribio el LOG";
                 }
             }
-            catch
+            catch(NullReferenceException ex)
             {
-                Resultado = "Error intentando escribir el log, verifique que el archivo no este corrupto";
+                Resultado = "Error intentando escribir el log, verifique que el archivo no este corrupto" + ex.ToString();
+                Escribe = new StreamWriter(RutaLog, true);
+                Escribe.WriteLine(DateTime.Now.ToString() + " " + NomAplicacion);
+                Escribe.WriteLine(Resultado);
                 Escribe.Close();
             }
             if (salir)

@@ -1,0 +1,56 @@
+﻿Ser_Excel_____27/06/2023 3:49:24 p. m.
+Ser_Excel_____27/06/2023 3:49:24 p. m.
+Ser_Excel_____27/06/2023 3:49:24 p. m.
+Ser_Excel_____27/06/2023 3:49:24 p. m.
+27/06/2023 3:49:41 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+27/06/2023 3:49:46 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 568
+********************************************************************************
+Ser_Excel_____27/06/2023 3:50:31 p. m.
+Ser_Excel_____27/06/2023 3:50:31 p. m.
+Ser_Excel_____27/06/2023 3:50:31 p. m.
+Ser_Excel_____27/06/2023 3:50:31 p. m.
+27/06/2023 3:50:46 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+27/06/2023 3:50:48 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 568
+********************************************************************************
+Ser_Excel_____27/06/2023 3:51:43 p. m.
+Ser_Excel_____27/06/2023 3:51:43 p. m.
+Ser_Excel_____27/06/2023 3:51:43 p. m.
+Ser_Excel_____27/06/2023 3:51:43 p. m.
+27/06/2023 3:52:04 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+27/06/2023 3:52:13 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 568
+********************************************************************************
+Ser_Excel_____27/06/2023 3:52:50 p. m.
+Ser_Excel_____27/06/2023 3:52:50 p. m.
+Ser_Excel_____27/06/2023 3:52:50 p. m.
+Ser_Excel_____27/06/2023 3:52:50 p. m.
+Ser_Excel_____27/06/2023 3:54:28 p. m.
+Ser_Excel_____27/06/2023 3:54:28 p. m.
+Ser_Excel_____27/06/2023 3:54:28 p. m.
+Ser_Excel_____27/06/2023 3:54:28 p. m.
+27/06/2023 3:54:50 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E18602.xls ] -> Descripcion del Programa:  
+********************************************************************************
+27/06/2023 3:54:54 p. m. Ser_Excel
+Error al ejecutar : [C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\SIIFNET\Prin_Pdf_OpenOffice.exe ] -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__41.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 568
+********************************************************************************

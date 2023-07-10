@@ -1,0 +1,172 @@
+﻿Ser_Excel_____29/06/2023 8:27:42 a. m.
+Ser_Excel_____29/06/2023 8:27:42 a. m.
+Ser_Excel_____29/06/2023 8:27:42 a. m.
+Ser_Excel_____29/06/2023 8:27:42 a. m.
+Ser_Excel_____29/06/2023 8:30:14 a. m.
+Ser_Excel_____29/06/2023 8:30:14 a. m.
+Ser_Excel_____29/06/2023 8:30:15 a. m.
+Ser_Excel_____29/06/2023 8:30:15 a. m.
+29/06/2023 8:30:39 a. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1016) que contiene 285. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 347
+********************************************************************************
+Ser_Excel_____29/06/2023 8:44:01 a. m.
+Ser_Excel_____29/06/2023 8:44:01 a. m.
+Ser_Excel_____29/06/2023 8:44:01 a. m.
+Ser_Excel_____29/06/2023 8:44:01 a. m.
+29/06/2023 8:53:35 a. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (1017) que contiene 285. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 348
+********************************************************************************
+Ser_Excel_____29/06/2023 8:54:25 a. m.
+Ser_Excel_____29/06/2023 8:54:25 a. m.
+Ser_Excel_____29/06/2023 8:54:26 a. m.
+Ser_Excel_____29/06/2023 8:54:26 a. m.
+29/06/2023 8:55:01 a. m. Ser_Excel
+Error en la Hoja Actual - [003] --> en la línea: (6) que contiene 286. La celda límite es: A1023 fila: 2 columna: 24-- -> Descripcion del Programa: System.IndexOutOfRangeException: Índice fuera de los límites de la matriz.
+   en CellStore`1.Delete(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns, Boolean shift)
+   en CellStore`1.Clear(Int32 fromRow, Int32 fromCol, Int32 rows, Int32 columns)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination, Nullable`1 excelRangeCopyOptionFlags)
+   en OfficeOpenXml.ExcelRangeBase.Copy(ExcelRangeBase Destination)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 348
+********************************************************************************
+Ser_Excel_____29/06/2023 9:17:04 a. m.
+Ser_Excel_____29/06/2023 9:17:04 a. m.
+Ser_Excel_____29/06/2023 9:17:05 a. m.
+Ser_Excel_____29/06/2023 9:17:05 a. m.
+29/06/2023 9:17:30 a. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 11. La celda límite es: -- -> Descripcion del Programa: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   en OfficeOpenXml.ExcelPackage.get_Workbook()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 291
+********************************************************************************
+Ser_Excel_____29/06/2023 9:19:50 a. m.
+Ser_Excel_____29/06/2023 9:19:50 a. m.
+Ser_Excel_____29/06/2023 9:19:54 a. m.
+Ser_Excel_____29/06/2023 9:19:54 a. m.
+Ser_Excel_____29/06/2023 9:20:26 a. m.
+Ser_Excel_____29/06/2023 9:20:26 a. m.
+Ser_Excel_____29/06/2023 9:20:28 a. m.
+Ser_Excel_____29/06/2023 9:20:28 a. m.
+Ser_Excel_____29/06/2023 9:20:57 a. m.
+Ser_Excel_____29/06/2023 9:20:57 a. m.
+Ser_Excel_____29/06/2023 9:21:00 a. m.
+Ser_Excel_____29/06/2023 9:21:00 a. m.
+29/06/2023 9:21:12 a. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 11. La celda límite es: -- -> Descripcion del Programa: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   en OfficeOpenXml.ExcelPackage.get_Workbook()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 291
+********************************************************************************
+Ser_Excel_____29/06/2023 11:02:38 a. m.
+Ser_Excel_____29/06/2023 11:02:38 a. m.
+Ser_Excel_____29/06/2023 11:02:38 a. m.
+Ser_Excel_____29/06/2023 11:02:38 a. m.
+29/06/2023 11:03:40 a. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 11. La celda límite es: -- -> Descripcion del Programa: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   en OfficeOpenXml.ExcelPackage.get_Workbook()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 292
+********************************************************************************
+Ser_Excel_____29/06/2023 11:04:47 a. m.
+Ser_Excel_____29/06/2023 11:04:47 a. m.
+Ser_Excel_____29/06/2023 11:04:48 a. m.
+Ser_Excel_____29/06/2023 11:04:48 a. m.
+29/06/2023 11:04:53 a. m. Ser_Excel
+Error en la Hoja Actual - [001] --> en la línea: (2) que contiene 11. La celda límite es: -- -> Descripcion del Programa: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   en OfficeOpenXml.ExcelPackage.get_Workbook()
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 292
+********************************************************************************
+Ser_Excel_____29/06/2023 11:07:54 a. m.
+Ser_Excel_____29/06/2023 11:07:54 a. m.
+Ser_Excel_____29/06/2023 11:07:55 a. m.
+Ser_Excel_____29/06/2023 11:07:55 a. m.
+29/06/2023 11:12:51 a. m. Ser_Excel
+Error en la Hoja Actual - [] --> en la línea: (1436) que contiene 1. La celda límite es: A1441 fila: 7 columna: 23-- -> Descripcion del Programa: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 296
+********************************************************************************
+Ser_Excel_____29/06/2023 11:14:03 a. m.
+Ser_Excel_____29/06/2023 11:14:03 a. m.
+Ser_Excel_____29/06/2023 11:14:03 a. m.
+Ser_Excel_____29/06/2023 11:14:03 a. m.
+29/06/2023 11:14:47 a. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.IndexOutOfRangeException: Worksheet position out of range.
+   en OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 497
+********************************************************************************
+Ser_Excel_____29/06/2023 11:16:20 a. m.
+Ser_Excel_____29/06/2023 11:16:20 a. m.
+Ser_Excel_____29/06/2023 11:16:20 a. m.
+Ser_Excel_____29/06/2023 11:16:20 a. m.
+29/06/2023 11:18:29 a. m. Ser_Excel
+ Error al pasar de xlsx a xls  -> Descripcion del Programa: System.IndexOutOfRangeException: Worksheet position out of range.
+   en OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   en Ser_Excel_2020.CrearExcel.<crear_reporte>d__42.MoveNext() en C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\CrearExcel.cs:línea 497
+********************************************************************************
+Ser_Excel_____29/06/2023 11:22:36 a. m.
+Ser_Excel_____29/06/2023 11:22:36 a. m.
+Ser_Excel_____29/06/2023 11:22:56 a. m.
+Ser_Excel_____29/06/2023 11:22:56 a. m.
+29/06/2023 11:23:43 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E57649.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____29/06/2023 11:30:42 a. m.
+Ser_Excel_____29/06/2023 11:30:42 a. m.
+Ser_Excel_____29/06/2023 11:31:00 a. m.
+Ser_Excel_____29/06/2023 11:31:00 a. m.
+Ser_Excel_____29/06/2023 11:32:00 a. m.
+Ser_Excel_____29/06/2023 11:32:00 a. m.
+Ser_Excel_____29/06/2023 11:32:01 a. m.
+Ser_Excel_____29/06/2023 11:32:01 a. m.
+Ser_Excel_____29/06/2023 11:38:44 a. m.
+Ser_Excel_____29/06/2023 11:38:44 a. m.
+Ser_Excel_____29/06/2023 11:38:45 a. m.
+Ser_Excel_____29/06/2023 11:38:45 a. m.
+Ser_Excel_____29/06/2023 11:43:06 a. m.
+Ser_Excel_____29/06/2023 11:43:06 a. m.
+Ser_Excel_____29/06/2023 11:43:08 a. m.
+Ser_Excel_____29/06/2023 11:43:08 a. m.
+Ser_Excel_____29/06/2023 11:47:18 a. m.
+Ser_Excel_____29/06/2023 11:47:18 a. m.
+Ser_Excel_____29/06/2023 11:47:20 a. m.
+Ser_Excel_____29/06/2023 11:47:20 a. m.
+Ser_Excel_____29/06/2023 11:49:19 a. m.
+Ser_Excel_____29/06/2023 11:49:19 a. m.
+Ser_Excel_____29/06/2023 11:49:20 a. m.
+Ser_Excel_____29/06/2023 11:49:20 a. m.
+29/06/2023 11:59:49 a. m. Ser_Excel
+Error limpiando el reporte: Worksheet position out of range. -> Descripcion del Programa:  
+********************************************************************************
+29/06/2023 11:59:50 a. m. Ser_Excel
+Error al guardar archivo: Package has been disposed
+Nombre del objeto: 'ExcelPackage'. -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____29/06/2023 12:22:03 p. m.
+Ser_Excel_____29/06/2023 12:22:03 p. m.
+Ser_Excel_____29/06/2023 12:22:04 p. m.
+Ser_Excel_____29/06/2023 12:22:04 p. m.
+29/06/2023 12:23:07 p. m. Ser_Excel
+Error limpiando el reporte: Worksheet position out of range. -> Descripcion del Programa:  
+********************************************************************************
+29/06/2023 12:23:07 p. m. Ser_Excel
+Error al guardar archivo: Package has been disposed
+Nombre del objeto: 'ExcelPackage'. -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____29/06/2023 12:26:14 p. m.
+Ser_Excel_____29/06/2023 12:26:14 p. m.
+Ser_Excel_____29/06/2023 12:26:15 p. m.
+Ser_Excel_____29/06/2023 12:26:15 p. m.
+Ser_Excel_____29/06/2023 12:27:32 p. m.
+Ser_Excel_____29/06/2023 12:27:32 p. m.
+Ser_Excel_____29/06/2023 12:27:33 p. m.
+Ser_Excel_____29/06/2023 12:27:33 p. m.
+29/06/2023 12:29:02 p. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E57649.xls ] -> Descripcion del Programa:  
+********************************************************************************
+Ser_Excel_____29/06/2023 3:17:37 p. m.
+Ser_Excel_____29/06/2023 3:17:37 p. m.
