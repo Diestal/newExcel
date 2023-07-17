@@ -67,7 +67,7 @@ namespace Ser_Excel_2020
 
         public CrearExcel()
         {
-            string rtaLog = RutaAplicacion.Replace(@"SIIFNET\", "Documentos\\LOGS\\");
+            string rtaLog = RutaAplicacion.Replace(@"Ser_excelNV\SIIFNET\", "Documentos\\LOGS\\");
             CargaDatos = new Datos();
             log = new LOG(rtaLog, "Ser_Excel");
         }
@@ -163,7 +163,6 @@ namespace Ser_Excel_2020
                             {
                                 try
                                 {
-                                    
                                     if (tipoReporte == "I")
                                     {
                                         //COPIA EL FORMATO DE LA HOJA PRINCIPAL A UNA NUEVA HOJA LLAMADA PRINCIPALAUX
@@ -205,7 +204,6 @@ namespace Ser_Excel_2020
                                         //NOMBRE DE HOJA A POSICIONAR EN LA HOJA PRINCIPAL
                                         hojaActual = vecActual[0];
                                         existe = false;
-
                                         //********************************CONFIGURAR ENCABEZADO DE PÁGINA**********************************
                                         if(hojaActual == "998" && i == vecDatos.Count - 2)
                                         {
@@ -257,7 +255,6 @@ namespace Ser_Excel_2020
                                             }
                                             break;//Para salir del bucle de vecdatos, ya que termina el Reporte y no tiene hoja en la Plantilla
                                         }
-
                                         //****************************************************************************************************
                                         //------------------->OBTENIENDO NÚMERO DE HOJAS DEL ACTUAL LIBRO EXCEL PARA NO REPETIR HOJA----------
                                         //****************************************************************************************************
@@ -266,7 +263,6 @@ namespace Ser_Excel_2020
                                         {
                                             vechojas.Add(hojaActual.ToString());
                                         }
-
                                         try
                                         {
                                             string IndicaCelda = "";
@@ -340,8 +336,8 @@ namespace Ser_Excel_2020
                                                                 else
                                                                 {
                                                                 // SE MERCHA LA CELDA CON EL DATO
-                                                                    cell.Value = combinedValue[indexOfCombined];
-                                                                    indexOfCombined++;
+                                                                cell.Value = combinedValue[indexOfCombined];
+                                                                indexOfCombined++;
                                                                     bool validasiesnum = false;
                                                                     if (cell.Value.ToString().IndexOf(",") != -1)
                                                                     {
@@ -404,15 +400,13 @@ namespace Ser_Excel_2020
                                 }
 
                                 hojaXls = AppExcel.Workbook.Worksheets.First();
-                                hojaXls.Select("A1");
-                                
+                                hojaXls.Select("A1");                                
                                 //ELIMINA INDICADOR DE LA HOJA PRINCIPAL
                                 var consultaindicador = (from celda in hojaXls.Cells["A:A"] where celda.Value is "??FIN??" select celda);
                                 foreach(var eliminaindi in consultaindicador)
                                 {
                                     hojaXls.Cells[eliminaindi.Address].Value = null;
                                 }
-
                                 AppExcel.Compression = CompressionLevel.BestSpeed;
                                 //SE GUARDA EL ARCHIVO FINAL
                                 var ArchivoExcel = Utilidades.ObtieneInfoArchivo(rutaPlantilla, false);

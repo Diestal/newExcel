@@ -40,7 +40,7 @@ namespace Ser_Excel_2020
         */
             DateTime Hora;
             string ruta_Timelog = "";
-            string rtaLog = RutaAplicacion.Replace(@"SIIFNET\", "Documentos\\LOGS\\");
+            string rtaLog = RutaAplicacion.Replace(@"Ser_excelNV\SIIFNET\", "Documentos\\LOGS\\");
             ruta_Timelog = RutaAplicacion + "TimeLog.txt";
 
             //param = Environment.GetCommandLineArgs();

@@ -4789,11 +4789,6 @@
             First row index minus last row index
             </summary>
         </member>
-        <member name="T:OfficeOpenXml.Core.CellStore.RangeDictionary`1">
-            <summary>
-            This class stores ranges to keep track if they have been accessed before and adds a reference to <see cref="!:T"/>.
-            </summary>
-        </member>
         <member name="T:OfficeOpenXml.Core.EPPlusReadOnlyList`1">
             <summary>
             A readonly collection of a generic type
@@ -5177,11 +5172,6 @@
             Use this property to cast an instance of <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation"/> to its subtype, see <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationAsType"/>.
             </summary>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation.ImeMode">
-            <summary>
-            Defines mode for Input Method Editor used in east-asian languages
-            </summary>
-        </member>
         <member name="P:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation.IsStale">
             <summary>
             Indicates whether this instance is stale, see https://github.com/EPPlusSoftware/EPPlus/wiki/Data-validation-Exceptions
@@ -5270,28 +5260,58 @@
             Abstract base class for all Excel datavalidations. Contains functionlity which is common for all these different validation types.
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidation._formula1Path">
+            <summary>
+            Xml path for Formula1
+            </summary>
+        </member>
+        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidation._formula2Path">
+            <summary>
+            Xml path for Formula2
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,OfficeOpenXml.DataValidation.InternalValidationType)">
             <summary>
             Constructor
             </summary>
-            <param name="uid">Id for validation</param>
-            <param name="address">adress validation is applied to</param>
+            <param name="worksheet">worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations)</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
+            <param name="internalValidationType">If the datavalidation is internal or in the extLst element</param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager,OfficeOpenXml.DataValidation.InternalValidationType)">
             <summary>
-            Read-File Constructor
+            Constructor
             </summary>
-            <param name="xr"></param>
+            <param name="worksheet">worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations) when importing xml</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
+            <param name="namespaceManager">Xml Namespace manager</param>
+            <param name="internalValidationType"><see cref="P:OfficeOpenXml.DataValidation.ExcelDataValidation.InternalValidationType"/></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidation,OfficeOpenXml.ExcelWorksheet)">
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.OfficeOpenXml#DataValidation#Contracts#IExcelDataValidation#IsStale">
             <summary>
-            Copy-Constructor
+            Indicates whether this instance is stale, see https://github.com/EPPlusSoftware/EPPlus/wiki/Data-validation-Exceptions
             </summary>
-            <param name="validation">Validation to copy from</param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.Validate">
+            <summary>
+            This method will validate the state of the validation
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If the state breaks the rules of the validation</exception>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.AllowsOperator">
+            <summary>
+            True if the validation type allows operator to be set.
+            </summary>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Uid">
             <summary>
-            Uid of the data validation
+            Uuid of the data validation
             </summary>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Address">
@@ -5302,6 +5322,11 @@
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.ValidationType">
             <summary>
             Validation type
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Operator">
+            <summary>
+            Operator for comparison between the entered value and Formula/Formulas.
             </summary>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.ErrorStyle">
@@ -5344,103 +5369,79 @@
             Text of the validation message box.
             </summary>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.AllowsOperator">
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Formula1Internal">
             <summary>
-            True if the current validation type allows operator.
+            Formula 1
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.Validate">
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Formula2Internal">
             <summary>
-            This method will validate the state of the validation
+            Formula 2
             </summary>
-            <exception cref="T:System.InvalidOperationException">If the state breaks the rules of the validation</exception>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.As">
             <summary>
             Us this property to case <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation"/>s to its subtypes
             </summary>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.IsStale">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.SetValue``1(System.Nullable{``0},System.String)">
             <summary>
-            Indicates whether this instance is stale, see https://github.com/EPPlusSoftware/EPPlus/wiki/Data-validation-Exceptions
-            DEPRECATED as of Epplus 6.2.
-            This as validations can no longer be stale since all attributes are now always fresh and held in the system.
+            Sets the value to the supplied path
             </summary>
+            <typeparam name="T"></typeparam>
+            <param name="val">The value to set</param>
+            <param name="path">xml path</param>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Operator">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.GetFormula1Path">
             <summary>
-            Operator for comparison between the entered value and Formula/Formulas.
+            Returns the <see cref="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Formula1Internal"/> xml path
             </summary>
+            <returns></returns>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.InternalValidationType">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.GetFormula2Path">
             <summary>
-            Type to determine if extLst or not
+            Returns the <see cref="P:OfficeOpenXml.DataValidation.ExcelDataValidation.Formula2Internal"/> xml path
             </summary>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidation.OnFormulaChanged">
-            <summary>
-            Event method for changing internal type when referring to an external worksheet.
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.GetClone">
-            <summary>
-            Create a Deep-Copy of this validation.
-            Note that one should also implement a separate clone() method casting to the child class
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidation.GetClone(OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Create a Deep-Copy of this validation.
-            Note that one should also implement a separate clone() method casting to the child class
-            </summary>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDatavalidationAddress">
-            <summary>
-            Handling for ExcelAdress updates of DataValidations
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDatavalidationAddress.BeforeChangeAddress">
-            <summary>
-            Called before the address changes
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDatavalidationAddress.ChangeAddress">
-            <summary>
-            Called when the address changes
-            </summary>
+            <returns></returns>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationAny">
             <summary>
             Any value validation.
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
             Constructor
             </summary>
+            <param name="worksheet"></param>
             <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
             <param name="address"></param>
+            <param name="validationType"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
             <summary>
-            Constructor for reading data
+            Constructor
             </summary>
-            <param name="xr">The XmlReader to read from</param>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationAny,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
             <summary>
-            Copy constructor
+            Constructor
             </summary>
-            <param name="copy"></param>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager"></param>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationAny.AllowsOperator">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationAny.Validate">
             <summary>
-            True if the current validation type allows operator.
-            </summary>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationAny.ValidationType">
-            <summary>
-            Validation type
+            This method will validate the state of the validation
             </summary>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationAsType">
@@ -5479,7 +5480,7 @@
             </summary>
             <returns>The data validation as an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationTime"/> or null if typecasting fails</returns>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationAsType.DecimalValidation">
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationAsType.DecimalValiation">
             <summary>
             Returns the data validation object as <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationDecimal"/>
             </summary>
@@ -5523,10 +5524,11 @@
             </code>
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.ReadDataValidations(System.Xml.XmlReader)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.#ctor(OfficeOpenXml.ExcelWorksheet)">
             <summary>
-            Read data validation from xml via xr reader
+            Constructor
             </summary>
+            <param name="worksheet"></param>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.ValidateAddress(System.String,OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation)">
             <summary>
@@ -5539,13 +5541,6 @@
             <summary>
             Validates all data validations.
             </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddCopyOfDataValidation(OfficeOpenXml.DataValidation.ExcelDataValidation,OfficeOpenXml.ExcelWorksheet,System.String)">
-            <summary>
-            Optionally add address at end for new copy with address in range
-            </summary>
-            <param name="dv"></param>
-            <param name="address"></param>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddAnyValidation(System.String)">
             <summary>
@@ -5561,18 +5556,13 @@
             </summary>
             <param name="address">the range/address to validate</param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddTextLengthValidation(System.String)">
-            <summary>
-            Adds an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationInt"/> regarding text length to the worksheet.
-            </summary>
-            <param name="address">The range/address to validate</param>
-        </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddDecimalValidation(System.String)">
             <summary>
             Addes an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationDecimal"/> to the worksheet. The only accepted values are
             decimal values.
             </summary>
             <param name="address">The range/address to validate</param>
+            <returns></returns>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddListValidation(System.String)">
             <summary>
@@ -5580,29 +5570,48 @@
             in a list.
             </summary>
             <param name="address">The range/address to validate</param>
+            <returns></returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddTextLengthValidation(System.String)">
+            <summary>
+            Adds an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationInt"/> regarding text length to the worksheet.
+            </summary>
+            <param name="address">The range/address to validate</param>
+            <returns></returns>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddDateTimeValidation(System.String)">
             <summary>
             Adds an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationDateTime"/> to the worksheet.
             </summary>
             <param name="address">The range/address to validate</param>
+            <returns></returns>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddTimeValidation(System.String)">
             <summary>
-            Adds an <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationDateTime"/> to the worksheet.
+            Addes a <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationTime"/> to the worksheet
             </summary>
             <param name="address">The range/address to validate</param>
+            <returns></returns>
         </member>
         <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.AddCustomValidation(System.String)">
             <summary>
             Adds a <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationCustom"/> to the worksheet.
             </summary>
             <param name="address">The range/address to validate</param>
+            <returns></returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.Remove(OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation)">
+            <summary>
+            Removes an <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> from the collection.
+            </summary>
+            <param name="item">The item to remove</param>
+            <returns>True if remove succeeds, otherwise false</returns>
+            <exception cref="T:System.ArgumentNullException">if <paramref name="item"/> is null</exception>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.Count">
             <summary>
             Number of validations
-            </summary>3
+            </summary>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.InternalValidationEnabled">
             <summary>
@@ -5625,22 +5634,14 @@
             <param name="address">A cell address or range</param>
             <returns>A <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> or null if no match</returns>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.FindAll(System.Predicate{OfficeOpenXml.DataValidation.ExcelDataValidation})">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.FindAll(System.Predicate{OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation})">
             <summary>
             Returns all validations that matches the supplied predicate <paramref name="match"/>.
             </summary>
             <param name="match">predicate to filter out matching validations</param>
             <returns></returns>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.Remove(OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation)">
-            <summary>
-            Removes an <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> from the collection.
-            </summary>
-            <param name="item">The item to remove</param>
-            <returns>True if remove succeeds, otherwise false</returns>
-            <exception cref="T:System.ArgumentNullException">if <paramref name="item"/> is null</exception>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.Find(System.Predicate{OfficeOpenXml.DataValidation.ExcelDataValidation})">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.Find(System.Predicate{OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation})">
             <summary>
             Returns the first matching validation.
             </summary>
@@ -5652,7 +5653,7 @@
             Removes all validations from the collection.
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.RemoveAll(System.Predicate{OfficeOpenXml.DataValidation.ExcelDataValidation})">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCollection.RemoveAll(System.Predicate{OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation})">
             <summary>
             Removes the validations that matches the predicate
             </summary>
@@ -5663,208 +5664,7 @@
             Custom validation, i.e. a formula.
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="worksheetName"></param>
-            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
-            <param name="address"></param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor for reading data
-            </summary>
-            <param name="xr">The XmlReader to read from</param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationCustom,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Copy constructor
-            </summary>
-            <param name="copy"></param>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.ValidationType">
-            <summary>
-            Property for determining type of validation
-            </summary>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime">
-            <summary>
-            Validation for <see cref="T:System.DateTime"/>.
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="worksheetName"></param>
-            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
-            <param name="address"></param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor for reading data
-            </summary>
-            <param name="xr">The XmlReader to read from</param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationDateTime,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Copy constructor
-            </summary>
-            <param name="copy"></param>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.ValidationType">
-            <summary>
-            Property for determining type of validation
-            </summary>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal">
-            <summary>
-            Data validation for decimal values
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="worksheetName"></param>
-            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
-            <param name="address"></param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Constructor for reading data
-            </summary>
-            <param name="xr">The XmlReader to read from</param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationDecimal,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Copy constructor
-            </summary>
-            <param name="copy"></param>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.ValidationType">
-            <summary>
-            Property for determining type of validation
-            </summary>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationFactory">
-            <summary>
-            Factory class for ExcelDataValidation.
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationFactory.Create(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Creates an instance of <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> out of the reader.
-            </summary>
-            <param name="xr"></param>
-            <returns>"</returns>
-            <exception cref="T:System.InvalidOperationException"></exception>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode">
-            <summary>
-            Mode for east-asian languages who use Input Method Editors(IME)
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.NoControl">
-            <summary>
-            Default. Has no effect on IME
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.Off">
-            <summary>
-            Forces IME mode to OFF
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.On">
-            <summary>
-            Forces the IMEmode to be on when first selecting the cell
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.Disabled">
-            <summary>
-            IME mode is disabled when cell is selected
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.Hiragana">
-            <summary>
-            Forces on and Hiragana (only applies if Japanese IME)
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.FullKatakana">
-            <summary>
-            Forces on and full-width katakana
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.HalfKatakana">
-            <summary>
-            Forces on and half-width katakana
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.FullAlpha">
-            <summary>
-            Forces on and Alpha-Numeric IME
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.HalfAlpha">
-            <summary>
-            Forces on and half-width alpha-numeric
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.FullHangul">
-            <summary>
-            Forces on and Full-width Hangul if Korean IME
-            </summary>
-        </member>
-        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationImeMode.HalfHangul">
-            <summary>
-            Forces on and half-width Hangul
-            </summary>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationInt">
-            <summary>
-            Data validation for integer values.
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet,System.Boolean)">
-            <summary>
-            Constructor for reading data
-            </summary>
-            <param name="xr">The XmlReader to read from</param>
-             <param name="isTextLength">Bool to define type of int validation</param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet,System.Boolean)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="worksheetName"></param>
-            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
-            <param name="address"></param>
-            <param name="isTextLength">Bool to define type of int validation</param>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationInt,OfficeOpenXml.ExcelWorksheet)">
-            <summary>
-            Copy constructor
-            </summary>
-            <param name="copy"></param>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationInt.ValidationType">
-            <summary>
-            Property for determining type of validation
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.Clone">
-            <summary>
-            Return a deep-copy clone of validation
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationList">
-            <summary>
-            This class represents an List data validation.
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
             Constructor
             </summary>
@@ -5873,27 +5673,264 @@
             <param name="address"></param>
             <param name="validationType"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
             <summary>
-            Constructor for reading data
+            Constructor
             </summary>
-            <param name="xr">The XmlReader to read from</param>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationList,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
             <summary>
-            Copy constructor
+            Constructor
             </summary>
-            <param name="copy"></param>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager"></param>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationList.AllowsOperator">
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime">
             <summary>
-            Read-Only property for seeing if this dataValidation type has an operator.
+            Validation for <see cref="T:System.DateTime"/>.
             </summary>
         </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationList.ValidationType">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
-            Property for determining type of validation
+            Constructor
             </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDateTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager"></param>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal">
+            <summary>
+            Data validation for decimal values
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationDecimal.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager">For test purposes</param>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationExtCustom">
+            <summary>
+            Custom data validation for the x14 xml section
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtCustom.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager">Namespace manager, for test purposes</param>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationExtList">
+            <summary>
+            Represents a data validation mapped to the extLst element in the worksheet xml.
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationExtList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager">Namespace manager, for test purposes</param>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationExtList.HideDropDown">
+            <summary>
+            True if an in-cell dropdown should be hidden.
+            </summary>
+            <remarks>
+            This property corresponds to the showDropDown attribute of a data validation in Office Open Xml. Strangely enough this
+            attributes hides the in-cell dropdown if it is true and shows the dropdown if it is not present or false. We have checked
+            this in both Ms Excel and Google sheets and it seems like this is how it is implemented in both applications. Hence why we have
+            renamed this property to HideDropDown since that better corresponds to the functionality.
+            </remarks>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationFactory">
+            <summary>
+            Factory class for ExcelDataValidation.
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationFactory.Create(OfficeOpenXml.DataValidation.ExcelDataValidationType,OfficeOpenXml.ExcelWorksheet,System.String,System.Xml.XmlNode,OfficeOpenXml.DataValidation.InternalValidationType,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> out of the given parameters.
+            </summary>
+            <param name="type"></param>
+            <param name="worksheet"></param>
+            <param name="address"></param>
+            <param name="itemElementNode"></param>
+            <param name="internalType"></param>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationInt">
+            <summary>
+            Data validation for integer values.
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationInt.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager">For test purposes</param>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationList">
+            <summary>
+            This class represents an List data validation.
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationList.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager">Namespace manager, for test purposes</param>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationList.HideDropDown">
             <summary>
@@ -5956,7 +5993,7 @@
             Validation for times (<see cref="T:OfficeOpenXml.DataValidation.ExcelTime"/>).
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
             Constructor
             </summary>
@@ -5965,22 +6002,26 @@
             <param name="address"></param>
             <param name="validationType"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
             <summary>
-            Constructor for reading data
+            Constructor
             </summary>
-            <param name="xr">The XmlReader to read from</param>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidationTime,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationTime.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
             <summary>
-            Copy constructor
+            Constructor
             </summary>
-            <param name="copy"></param>
-        </member>
-        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationTime.ValidationType">
-            <summary>
-            Property for determining type of validation
-            </summary>
+            <param name="worksheet"></param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="address"></param>
+            <param name="validationType"></param>
+            <param name="itemElementNode"></param>
+            <param name="namespaceManager"></param>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.eDataValidationType">
             <summary>
@@ -6037,12 +6078,75 @@
             Validation type
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationType.TypeToXmlString">
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.AllowOperator">
+            <summary>
+            This type allows operator to be set
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationType.GetByValidationType(OfficeOpenXml.DataValidation.eDataValidationType)">
             <summary>
             Returns a validation type by <see cref="T:OfficeOpenXml.DataValidation.eDataValidationType"/>
             </summary>
             <param name="type"></param>
             <returns></returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationType.Equals(System.Object)">
+            <summary>
+            Overridden Equals, compares on internal validation type
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationType.GetHashCode">
+            <summary>
+            Overrides GetHashCode()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.Any">
+            <summary>
+            Any values
+            </summary>
+        </member>
+        <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationType._whole">
+            <summary>
+            Integer values
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.Whole">
+            <summary>
+            Whole/Integer validation type.
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.List">
+            <summary>
+            List validation type, a provided list of allowed values
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.Decimal">
+            <summary>
+            Decimal validation type
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.TextLength">
+            <summary>
+            Text length validation type
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.DateTime">
+            <summary>
+             Time validation type
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.Time">
+            <summary>
+            Time validation type
+            </summary>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationType.Custom">
+            <summary>
+            Custom validation type
+            </summary>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.ExcelDataValidationWarningStyle">
             <summary>
@@ -6051,8 +6155,7 @@
         </member>
         <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationWarningStyle.undefined">
             <summary>
-            warning style will be excluded.
-            Excel will default this to Stop warning style.
+            warning style will be excluded
             </summary>
         </member>
         <member name="F:OfficeOpenXml.DataValidation.ExcelDataValidationWarningStyle.stop">
@@ -6076,25 +6179,37 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
             Constructor
             </summary>
-            <param name="workSheetName"></param>
+            <param name="worksheet"></param>
             <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
             <param name="address"></param>
+            <param name="validationType"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,OfficeOpenXml.DataValidation.InternalValidationType)">
             <summary>
-            Constructor for reading data
+            Constructor
             </summary>
-            <param name="xr">The XmlReader to read from</param>
+            <param name="worksheet">Worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations)</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
+            <param name="internalValidationType">If the datavalidation is internal or in the extLst element</param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidation,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager,OfficeOpenXml.DataValidation.InternalValidationType)">
             <summary>
-            Copy Constructor
+            Constructor
             </summary>
-            <param name="copy"></param>
+            <param name="worksheet">Worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations)</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
+            <param name="namespaceManager">for test purposes</param>
+            <param name="internalValidationType"><see cref="T:OfficeOpenXml.DataValidation.InternalValidationType"/></param>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula`1.Formula">
             <summary>
@@ -6115,30 +6230,86 @@
             </summary>
             <typeparam name="T">An instance implementing the <see cref="T:OfficeOpenXml.DataValidation.Formulas.Contracts.IExcelDataValidationFormula"></see></typeparam>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(System.String,System.String,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType)">
             <summary>
             Constructor
             </summary>
-            <param name="workSheetName"></param>
+            <param name="worksheet"></param>
             <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
             <param name="address"></param>
+            <param name="validationType"></param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(System.Xml.XmlReader,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode)">
             <summary>
-            Constructor for reading data
+            Constructor
             </summary>
-            <param name="xr">The XmlReader to read from</param>
+            <param name="worksheet">Worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations)</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(OfficeOpenXml.DataValidation.ExcelDataValidation,OfficeOpenXml.ExcelWorksheet)">
+        <member name="M:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.#ctor(OfficeOpenXml.ExcelWorksheet,System.String,System.String,OfficeOpenXml.DataValidation.ExcelDataValidationType,System.Xml.XmlNode,System.Xml.XmlNamespaceManager)">
             <summary>
-            Copy Constructor
+            Constructor
             </summary>
-            <param name="copy"></param>
+            <param name="worksheet">Worksheet that owns the validation</param>
+            <param name="uid">Uid of the data validation, format should be a Guid surrounded by curly braces.</param>
+            <param name="itemElementNode">Xml top node (dataValidations)</param>
+            <param name="validationType">Data validation type</param>
+            <param name="address">address for data validation</param>
+            <param name="namespaceManager">for test purposes</param>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.ExcelDataValidationWithFormula2`1.Formula2">
             <summary>
             Formula - Either a {T} value or a spreadsheet formula
             </summary>
+        </member>
+        <member name="T:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection">
+            <summary>
+            Data validations for the ext lst (x14) section
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.AddValidation``1(OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationWithFormula{``0})">
+            <summary>
+            Adds a validation
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.AddValidation``1(OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationWithFormula2{``0})">
+            <summary>
+            Adds a validation
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="P:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.IsEmpty">
+            <summary>
+            Returns true if the list is empty
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.Remove(OfficeOpenXml.DataValidation.Contracts.IExcelDataValidation)">
+            <summary>
+            Removes an <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidation"/> from the collection.
+            </summary>
+            <param name="item">The item to remove</param>
+            <returns>True if remove succeeds, otherwise false</returns>
+            <exception cref="T:System.ArgumentNullException">if <paramref name="item"/> is null</exception>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>An enumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:OfficeOpenXml.DataValidation.ExcelExLstDataValidationCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>An enumerator that can be used to iterate through the collection.</returns>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.ExcelTime">
             <summary>
@@ -6223,16 +6394,7 @@
         </member>
         <member name="P:OfficeOpenXml.DataValidation.Formulas.Contracts.IExcelDataValidationFormula.ExcelFormula">
             <summary>
-            An excel formula 
-            <para />
-            Keep in mind that special signs like " and ( Must be made double to work.
-            <para />
-            ExcelFormula = "\"Epplus\"" will work. And show up as Epplus in excel
-            <para />
-            ExcelFormula = "\"Epplus" will generate a corrupt workbook. As there is no double.
-            <para />
-            And "\"\"\"Epplus\"" would show up as "Epplus in excel.
-            <para />
+            An excel formula
             </summary>
         </member>
         <member name="T:OfficeOpenXml.DataValidation.Formulas.Contracts.IExcelDataValidationFormulaDateTime">
@@ -6296,10 +6458,13 @@
             Base class for a formula
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormula.#ctor(System.String,System.String,System.Action{OfficeOpenXml.DataValidation.Events.OnFormulaChangedEventArgs})">
+        <member name="M:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormula.#ctor(System.Xml.XmlNamespaceManager,System.Xml.XmlNode,System.String,System.String)">
             <summary>
             Constructor
             </summary>
+            <param name="namespaceManager">Namespacemanger of the worksheet</param>
+            <param name="topNode">validation top node</param>
+            <param name="formulaPath">xml path of the current formula</param>
             <param name="validationUid">id of the data validation containing this formula</param>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormula.State">
@@ -6339,10 +6504,13 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="M:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormulaValue`1.#ctor(System.String,System.String,System.Action{OfficeOpenXml.DataValidation.Events.OnFormulaChangedEventArgs})">
+        <member name="M:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormulaValue`1.#ctor(System.Xml.XmlNamespaceManager,System.Xml.XmlNode,System.String,System.String)">
             <summary>
             Constructor
             </summary>
+            <param name="namespaceManager">Namespacemanger of the worksheet</param>
+            <param name="topNode">validation top node</param>
+            <param name="formulaPath">xml path of the current formula</param>
             <param name="validationUid">Uid for the data validation</param>
         </member>
         <member name="P:OfficeOpenXml.DataValidation.Formulas.ExcelDataValidationFormulaValue`1.Value">
@@ -6364,7 +6532,7 @@
         </member>
         <member name="M:OfficeOpenXml.DataValidation.IRangeDataValidation.AddIntegerDataValidation">
             <summary>
-            Adds a <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationInt"/> to the range
+            Adds a <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationInt"/> to the range
             </summary>
             <returns>A <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationInt"/> that can be configured for integer data validation</returns>
         </member>
@@ -6388,7 +6556,7 @@
         </member>
         <member name="M:OfficeOpenXml.DataValidation.IRangeDataValidation.AddTextLengthDataValidation">
             <summary>
-            Adds a <see cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationInt"/> regarding text length validation to the range.
+            Adds a <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationInt"/> regarding text length validation to the range.
             </summary>
             <returns></returns>
         </member>
@@ -6403,20 +6571,6 @@
             Adds a <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationCustom"/> to the range.
             </summary>
             <returns>A <see cref="T:OfficeOpenXml.DataValidation.Contracts.IExcelDataValidationCustom"/> that can be configured for custom validation</returns>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.IRangeDataValidation.ClearDataValidation(System.Boolean)">
-            <summary>
-            Removes validation from the cell/range
-            </summary>
-            <param name="deleteIfEmpty">Delete the validation if it has no more addresses its being applied to. If set to false an <see cref="T:System.InvalidOperationException"/> will be thrown if all addresses of a datavalidation has been cleared.</param>
-            <exception cref="T:System.InvalidOperationException">Thrown if <paramref name="deleteIfEmpty"/> is false and all addresses of a datavalidation has been cleared.</exception>
-        </member>
-        <member name="M:OfficeOpenXml.DataValidation.RangeDataValidation.ClearDataValidation(System.Boolean)">
-            <summary>
-             Used to remove all dataValidations in cell or cellrange
-            </summary>
-            <param name="deleteIfEmpty">Deletes the dataValidation if it has no addresses after clear</param>
-            <exception cref="T:System.InvalidOperationException"></exception>
         </member>
         <member name="T:OfficeOpenXml.Drawing.Chart.ChartEx.eColorBy">
             <summary>
@@ -26994,13 +27148,6 @@
             <param name="pck">Reference to the package to find information about tables and names</param>
             <param name="referenceAddress">The address</param>
         </member>
-        <member name="M:OfficeOpenXml.ExcelAddressBase.IntersectReversed(OfficeOpenXml.ExcelAddressBase)">
-            <summary>
-            Returns the parts of this address that not intersects with <paramref name="address"/>
-            </summary>
-            <param name="address">The address to intersect with</param>
-            <returns>The addresses not intersecting with <paramref name="address"/></returns>
-        </member>
         <member name="M:OfficeOpenXml.ExcelAddressBase.#ctor(System.String,System.Boolean)">
             <summary>
             Address is an defined name
@@ -27074,11 +27221,6 @@
             <summary>
             returns the first address if the address is a multi address.
             A1:A2,B1:B2 returns A1:A2
-            </summary>
-        </member>
-        <member name="P:OfficeOpenXml.ExcelAddressBase.FirstCellAddressRelative">
-            <summary>
-            Returns the address of the first cell in the address without $. Returns #REF! if the address is invalid.
             </summary>
         </member>
         <member name="M:OfficeOpenXml.ExcelAddressBase.Validate">
@@ -27436,7 +27578,7 @@
             <param name="cellAddress">The alphanumeric cell address</param>
             <returns>True if the cell address is valid</returns>
         </member>
-        <member name="M:OfficeOpenXml.ExcelCellBase.UpdateFormulaReferences(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Boolean,System.Boolean,System.Collections.Generic.IEnumerable{OfficeOpenXml.FormulaParsing.LexicalAnalysis.Token})">
+        <member name="M:OfficeOpenXml.ExcelCellBase.UpdateFormulaReferences(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             Updates the Excel formula so that all the cellAddresses are incremented by the row and column increments
             if they fall after the afterRow and afterColumn.
@@ -27451,7 +27593,6 @@
             <param name="modifiedSheet">The sheet where cells are being inserted or deleted.</param>
             <param name="setFixed">Fixed address</param>
             <param name="copy">If a copy operation is performed, fully fixed cells should be untoughe.</param>
-            <param name="tokens">Tokens, if a cache exists</param>
             <returns>The updated version of the <paramref name="formula"/>.</returns>
         </member>
         <member name="M:OfficeOpenXml.ExcelCellBase.UpdateFormulaReferences(System.String,OfficeOpenXml.ExcelAddressBase,OfficeOpenXml.ExcelAddressBase,OfficeOpenXml.eShiftTypeInsert,System.String,System.String,System.Boolean)">
@@ -28899,7 +29040,7 @@
         <member name="M:OfficeOpenXml.ExcelPackage.GetAsByteArray">
             <summary>
             Saves and returns the Excel files as a bytearray.
-            Note that the package is closed upon save.
+            Note that the package is closed upon save
             </summary>
             <example>      
             Example how to return a document from a Webserver...
@@ -29874,7 +30015,7 @@
             <param name="valueMethod"></param>
             <param name="value"></param>
         </member>
-        <member name="M:OfficeOpenXml.ExcelRangeBase.SetValueAddress(OfficeOpenXml.ExcelAddressBase,OfficeOpenXml.ExcelRangeBase._setValue,System.Object)">
+        <member name="M:OfficeOpenXml.ExcelRangeBase.SetValueAddress(OfficeOpenXml.ExcelAddress,OfficeOpenXml.ExcelRangeBase._setValue,System.Object)">
             <summary>
             Set the property for an address
             </summary>
@@ -29882,7 +30023,7 @@
             <param name="valueMethod"></param>
             <param name="value"></param>
         </member>
-        <member name="M:OfficeOpenXml.ExcelRangeBase.Set_SharedFormula(OfficeOpenXml.ExcelRangeBase,System.String,OfficeOpenXml.ExcelAddressBase,System.Boolean)">
+        <member name="M:OfficeOpenXml.ExcelRangeBase.Set_SharedFormula(OfficeOpenXml.ExcelRangeBase,System.String,OfficeOpenXml.ExcelAddress,System.Boolean)">
             <summary>
             Handles shared formulas
             </summary>
@@ -30207,17 +30348,6 @@
             Creates an array-formula.
             </summary>
             <param name="ArrayFormula">The formula</param>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelRangeBase.ClearValue(OfficeOpenXml.Core.CellStore.CellStoreValue,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Clears either value or style for a range from the cellstore.
-            </summary>
-            <param name="values"></param>
-            <param name="clearValue"></param>
-            <param name="fromRow"></param>
-            <param name="fromCol"></param>
-            <param name="rows"></param>
-            <param name="cols"></param>
         </member>
         <member name="M:OfficeOpenXml.ExcelRangeBase.Dispose">
             <summary>
@@ -32791,19 +32921,33 @@
             <param name="xr"></param>
             <returns></returns>
         </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.GetWorkSheetXml(System.IO.Stream,System.Int64,System.Int64,System.Text.Encoding@)">
+            <summary>
+            Extracts the workbook XML without the sheetData-element (containing all cell data).
+            Xml-Cell data can be extreemly large (GB), so we find the sheetdata element in the streem (position start) and 
+            then tries to find the &lt;/sheetData&gt; element from the end-parameter.
+            This approach is to avoid out of memory exceptions reading large packages
+            </summary>
+            <param name="stream">the worksheet stream</param>
+            <param name="start">Position from previous reading where we found the sheetData element</param>
+            <param name="end">End position, where &lt;/sheetData&gt; or &lt;sheetData/&gt; is found</param>
+            <param name="encoding">Encoding</param>
+            <returns>The worksheet xml, with an empty sheetdata. (Sheetdata is in memory in the worksheet)</returns>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.ReadXmlReaderUntil(System.Xml.XmlReader,System.String,System.String)">
+            <summary>
+            Read until the node is found. If not found the xmlreader is reseted.
+            </summary>
+            <param name="xr">The reader</param>
+            <param name="nodeText">Text to search for</param>
+            <param name="altNode">Alternative text to search for</param>
+            <returns></returns>
+        </member>
         <member name="M:OfficeOpenXml.ExcelWorksheet.LoadHyperLinks(System.Xml.XmlReader)">
             <summary>
             Load Hyperlinks
             </summary>
             <param name="xr">The reader</param>
-        </member>
-        <member name="P:OfficeOpenXml.ExcelWorksheet.DataValidations">
-            <summary>
-            DataValidation defined in the worksheet. Use the Add methods to create DataValidations and add them to the worksheet. Then
-            set the properties on the instance returned.
-            Must know worksheet or at least worksheet name to determine if extLst when user input DataValidations in API.
-            </summary>
-            <seealso cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationCollection"/>
         </member>
         <member name="M:OfficeOpenXml.ExcelWorksheet.LoadCells(System.Xml.XmlReader)">
             <summary>
@@ -32816,6 +32960,13 @@
             Load merged cells
             </summary>
             <param name="xr"></param>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.UpdateMergedCells(System.IO.StreamWriter,System.String)">
+            <summary>
+            Update merged cells
+            </summary>
+            <param name="sw">The writer</param>
+            <param name="prefix">Namespace prefix for the main schema</param>
         </member>
         <member name="M:OfficeOpenXml.ExcelWorksheet.AddRow(System.Xml.XmlReader,System.Int32)">
             <summary>
@@ -33034,6 +33185,35 @@
             Save all table data
             </summary>
         </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.UpdateColumnData(System.IO.StreamWriter,System.String)">
+            <summary>
+            Inserts the cols collection into the XML document
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.UpdateRowCellData(System.IO.StreamWriter,System.String)">
+            <summary>
+            Insert row and cells into the XML document
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.FixSharedFormulas">
+            <summary>
+            Check all Shared formulas that the first cell has not been deleted.
+            If so create a standard formula of all cells in the formula .
+            </summary>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.UpdateHyperLinks(System.IO.StreamWriter,System.String)">
+            <summary>
+            Update xml with hyperlinks 
+            </summary>
+            <param name="sw">The stream</param>
+            <param name="prefix">The namespace prefix for the main schema</param>
+        </member>
+        <member name="M:OfficeOpenXml.ExcelWorksheet.CreateHyperLinkCollection">
+            <summary>
+            Create the hyperlinks node in the XML
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:OfficeOpenXml.ExcelWorksheet.Dimension">
             <summary>
             Dimension address for the worksheet. 
@@ -33078,6 +33258,13 @@
             set the properties on the instance returned.
             </summary>
             <seealso cref="T:OfficeOpenXml.ConditionalFormatting.ExcelConditionalFormattingCollection"/>
+        </member>
+        <member name="P:OfficeOpenXml.ExcelWorksheet.DataValidations">
+            <summary>
+            DataValidation defined in the worksheet. Use the Add methods to create DataValidations and add them to the worksheet. Then
+            set the properties on the instance returned.
+            </summary>
+            <seealso cref="T:OfficeOpenXml.DataValidation.ExcelDataValidationCollection"/>
         </member>
         <member name="P:OfficeOpenXml.ExcelWorksheet.IgnoredErrors">
             <summary>
@@ -33661,69 +33848,6 @@
             <summary>
             Unlock all rows and columns to scroll freely
             </summary>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.#ctor(OfficeOpenXml.ExcelWorksheet,OfficeOpenXml.ExcelPackage)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="worksheet"></param>
-            <param name="package"></param>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.WriteNodes(System.IO.StreamWriter,System.String,System.Int32@,System.Int32@)">
-            <summary>
-            Replaces placeholder nodes by writing the system's held information
-            </summary>
-            <param name="sw">The streamwriter file info is written to</param>
-            <param name="xml">The original XML</param>
-            <param name="startOfNode">Start position of the current node</param>
-            <param name="endOfNode">End position of the current node</param>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.UpdateColumnData(System.IO.StreamWriter,System.String)">
-            <summary>
-            Inserts the cols collection into the XML document
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.FixSharedFormulas">
-            <summary>
-            Check all Shared formulas that the first cell has not been deleted.
-            If so create a standard formula of all cells in the formula .
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.UpdateRowCellData(System.IO.StreamWriter,System.String)">
-            <summary>
-            Insert row and cells into the XML document
-            </summary>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.UpdateMergedCells(System.IO.StreamWriter,System.String)">
-            <summary>
-            Update merged cells
-            </summary>
-            <param name="sw">The writer</param>
-            <param name="prefix">Namespace prefix for the main schema</param>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.UpdateHyperLinks(System.IO.StreamWriter,System.String)">
-            <summary>
-            Update xml with hyperlinks 
-            </summary>
-            <param name="sw">The stream</param>
-            <param name="prefix">The namespace prefix for the main schema</param>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExcelXmlWriter.UpdateExtLstDataValidations(System.String)">
-            <summary>
-            ExtLst updater for DataValidations
-            </summary>
-            <param name="prefix"></param>
-            <returns></returns>
-        </member>
-        <member name="M:OfficeOpenXml.ExcelXMLWriter.ExtLstHelper.InsertExt(System.String,System.String,System.String)">
-            <summary>
-            Inserts content after the uriNode
-            Note that this is only intended to be done once per type of node and it will throw error
-            if the same uri is attempted in two separate calls or if it's already been read in initally.
-            </summary>
-            <param name="uri"></param>
-            <param name="content"></param>
-            If <param name="uriOfNodeBefore"> is blank sets content as the first ext</param>
         </member>
         <member name="T:OfficeOpenXml.Export.HtmlExport.Accessibility.AccessibilitySettings">
             <summary>
@@ -39111,11 +39235,6 @@
             If the contains more than one cell  with a value.
             </summary>
         </member>
-        <member name="P:OfficeOpenXml.FormulaParsing.IRangeInfo.IsRef">
-            <summary>
-            If the range is not valid and returns #REF!
-            </summary>
-        </member>
         <member name="M:OfficeOpenXml.FormulaParsing.IRangeInfo.GetNCells">
             <summary>
             Get number of cells
@@ -40010,6 +40129,21 @@
         <member name="F:OfficeOpenXml.FormulaParsing.Utilities.RegexConstants.ExcelAddress">
             <summary>
             Regex constant matching a full Excel address
+            </summary>
+        </member>
+        <member name="F:OfficeOpenXml.FormulaParsing.Utilities.RegexConstants.Boolean">
+            <summary>
+            Regex constant matching a boolean expression (true or false)
+            </summary>
+        </member>
+        <member name="F:OfficeOpenXml.FormulaParsing.Utilities.RegexConstants.Decimal">
+            <summary>
+            Regex constant matching a decimal expression
+            </summary>
+        </member>
+        <member name="F:OfficeOpenXml.FormulaParsing.Utilities.RegexConstants.Integer">
+            <summary>
+            Regex constant matching an integer expression
             </summary>
         </member>
         <member name="T:OfficeOpenXml.FormulaParsing.Utilities.Require">
@@ -66683,15 +66817,6 @@
             <param name="startPos"></param>
             <returns></returns>
         </member>
-        <member name="M:OfficeOpenXml.Utils.XmlReaderHelper.ReadUntil(System.Xml.XmlReader,System.String[])">
-            <summary>
-            Read file until a tag in tagName is found or EOF.
-            This requires more careful consideration than when specifing depth.
-            </summary>
-            <param name="xr">Handle to xml to read data from</param>
-            <param name="tagName">Array of tags to stop at in the order they should appear in the xml</param>
-            <returns></returns>
-        </member>
         <member name="F:OfficeOpenXml.Vba.ContentHash.V3NormalizedDataHashInputProvider.DefaultAttributes">
             <summary>
             This list of strings is taken from [MS-OVBA] v20220517, 2.4.2.5 V3 Content Normalized Data
@@ -67310,15 +67435,6 @@
             The V3 signature includes more coverage for data in the dir and project stream in the hash, not covered by the legacy and agile signatures.
             </summary>
         </member>
-        <member name="M:OfficeOpenXml.WorksheetZipStream.FindElementPos(System.String,System.String,System.Boolean,System.Int32)">
-            <summary>
-            Returns the position in the xml document for an element. Either returns the position of the start element or the end element.
-            </summary>
-            <param name="xml">The xml to search</param>
-            <param name="element">The element</param>
-            <param name="returnStartPos">If the position before the start element is returned. If false the end of the end element is returned.</param>
-            <returns>The position of the element in the input xml</returns>
-        </member>
         <member name="T:OfficeOpenXml.XmlHelper">
             <summary>
             Abstract helper class containing functionality to work with XML inside the package. 
@@ -67464,18 +67580,6 @@
             <param name="parentNode">Parent node</param>
             <param name="beforeNodes">comma separated list containing nodes to insert after. Left to right order</param>
             <param name="newNode">The new node to be inserterd</param>
-        </member>
-        <member name="M:OfficeOpenXml.XMLWritingEncoder.AttributeEncoder.EncodeXMLAttribute(System.String)">
-            <summary>
-            Encode to XML (special characteres: &apos; &quot; &gt; &lt; &amp;)
-            </summary>
-            <param name="s"></param>
-            <returns></returns>
-        </member>
-        <member name="T:EPPlusTest.Utils.RollingBuffer">
-            <summary>
-            A buffer that rolls out memory as it's written to the buffer. 
-            </summary>
         </member>
     </members>
 </doc>

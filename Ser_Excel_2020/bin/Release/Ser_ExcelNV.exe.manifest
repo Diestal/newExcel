@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ser_ExcelNV.exe" size="62464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ser_ExcelNV.exe" size="61440">
       <assemblyIdentity name="Ser_ExcelNV" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>883zPk/vq1Gd1yfCryGnKuPGwLh3KmcA4EFdFR0vdng=</dsig:DigestValue>
+        <dsig:DigestValue>p7t/uNjLOHFJcwL1WvYoI+clA3SVvybRjKsLcZIzlfM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
