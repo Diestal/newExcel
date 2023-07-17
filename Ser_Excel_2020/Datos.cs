@@ -26,7 +26,7 @@ namespace Ser_Excel_2020
         //public Datos(string nombreArchivo)
         public Datos()
         {
-            string rtaLog = RutaAplicacion.Replace(@"SIIFNET\", "Documentos\\LOGS\\");
+            string rtaLog = RutaAplicacion.Replace(@"Ser_excelNV\SIIFNET\", "Documentos\\LOGS\\");
             log = new LOG(rtaLog, "Ser_Excel");
             //narchivo = nombreArchivo;
             CargarRutas(RutaAplicacion);

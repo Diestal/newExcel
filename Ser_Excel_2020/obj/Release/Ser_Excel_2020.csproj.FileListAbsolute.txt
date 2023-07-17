@@ -33,3 +33,38 @@ C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Se
 C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Release\Ser_ExcelNV.exe
 C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Release\Ser_ExcelNV.pdb
 C:\Users\daniel.rodriguez\Desktop\Nueva carpeta\Ser_Excel_2020\Ser_Excel_2020\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Ser_ExcelNV.exe.config
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Ser_ExcelNV.exe.manifest
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Ser_ExcelNV.application
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Ser_ExcelNV.exe
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Ser_ExcelNV.pdb
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\EPPlus.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\EPPlus.Interfaces.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\EPPlus.System.Drawing.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Buffers.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Drawing.Common.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.IO.Packaging.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Memory.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Numerics.Vectors.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Text.Encoding.CodePages.dll
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\EPPlus.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Buffers.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Drawing.Common.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.IO.Packaging.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Memory.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Numerics.Vectors.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\bin\Release\System.Text.Encoding.CodePages.xml
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.SuggestedBindingRedirects.cache
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.ResolveComReference.cache
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_ExcelNV.exe.manifest
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_ExcelNV.application
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_Excel_2020.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_ExcelNV.exe
+C:\Users\USUARIO\Desktop\NewSerExcel\newExcel\Ser_Excel_2020\obj\Release\Ser_ExcelNV.pdb
