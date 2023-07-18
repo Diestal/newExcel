@@ -11,7 +11,7 @@ namespace Ser_Excel_2020
     class Datos
     {
         #region Variables Privadas
-        private string RutaAplicacion = System.AppDomain.CurrentDomain.BaseDirectory.ToString();
+        private string RutaAplicacion = System.AppDomain.CurrentDomain.BaseDirectory.ToString().Replace(@"SIIFNET\Ser_excelNV\", @"SIIFNET\");
         private LOG log;
         private string narchivo;
         #endregion
@@ -26,7 +26,7 @@ namespace Ser_Excel_2020
         //public Datos(string nombreArchivo)
         public Datos()
         {
-            string rtaLog = RutaAplicacion.Replace(@"Ser_excelNV\SIIFNET\", "Documentos\\LOGS\\");
+            string rtaLog = RutaAplicacion.Replace(@"SIIFNET\Ser_excelNV\", "Documentos\\LOGS\\");
             log = new LOG(rtaLog, "Ser_Excel");
             //narchivo = nombreArchivo;
             CargarRutas(RutaAplicacion);

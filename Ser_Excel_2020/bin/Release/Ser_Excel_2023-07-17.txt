@@ -1,0 +1,17 @@
+﻿Ser_Excel_____17/07/2023 9:18:21 a. m.
+Ser_Excel_____17/07/2023 9:18:21 a. m.
+Ser_Excel_____17/07/2023 9:18:21 a. m.
+Ser_Excel_____17/07/2023 9:18:21 a. m.
+17/07/2023 9:18:48 a. m. Ser_Excel
+Archivo generado exitosamente !!! --> [ C:\Users\daniel.rodriguez\Desktop\newExcel\newExcel\Ser_Excel_2020\SIIF_NOMINA\DOCUMENTOS\ARCHIVOS\E57649.xls ] -> Descripcion del Programa:  
+********************************************************************************
+17/07/2023 9:18:51 a. m. Ser_Excel
+Error al generar el reporte en PDF:  -> Descripcion del Programa: System.InvalidCastException: No se puede convertir el objeto COM del tipo 'Microsoft.Office.Interop.Excel.ApplicationClass' al tipo de interfaz 'Microsoft.Office.Interop.Excel._Application'. Ocurrió un error de operación debido a que la llamada QueryInterface en el componente COM para la interfaz con IID '{000208D5-0000-0000-C000-000000000046}' generó el siguiente error: Error al cargar la biblioteca de tipo/DLL. (Excepción de HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY)).
+   en System.StubHelpers.StubHelpers.GetCOMIPFromRCW(Object objSrc, IntPtr pCPCMD, IntPtr& ppTarget, Boolean& pfNeedsRelease)
+   en Microsoft.Office.Interop.Excel.ApplicationClass.get_Workbooks()
+   en Ser_Excel_2020.CrearExcel.crear_reporte(String[] param, String ruta_Timelog) en C:\Users\daniel.rodriguez\Desktop\newExcel\newExcel\Ser_Excel_2020\CrearExcel.cs:línea 515
+********************************************************************************
+Ser_Excel_____17/07/2023 9:58:08 a. m.
+Ser_Excel_____17/07/2023 9:58:08 a. m.
+Ser_Excel_____17/07/2023 9:58:08 a. m.
+Ser_Excel_____17/07/2023 9:58:08 a. m.

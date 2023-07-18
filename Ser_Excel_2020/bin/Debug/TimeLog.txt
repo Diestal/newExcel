@@ -710,3 +710,5 @@ Hora de Inicio:    lunes, 10 de julio de 2023 9:56:51 a. m.
 Hora de Finalización:    lunes, 10 de julio de 2023 9:57:24 a. m.
 ***************************************************************************************
 Hora de Inicio:    lunes, 10 de julio de 2023 9:59:48 a. m.
+***************************************************************************************
+Hora de Inicio:    lunes, 17 de julio de 2023 9:23:40 a. m.

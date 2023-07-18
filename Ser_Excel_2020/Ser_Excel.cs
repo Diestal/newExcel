@@ -43,12 +43,12 @@ namespace Ser_Excel_2020
             string rtaLog = RutaAplicacion.Replace(@"Ser_excelNV\SIIFNET\", "Documentos\\LOGS\\");
             ruta_Timelog = RutaAplicacion + "TimeLog.txt";
 
-            //param = Environment.GetCommandLineArgs();
+            param = Environment.GetCommandLineArgs();
 
             //------------------------------------
             //--Para Pruebas, Excel normal
             //------------------------------------
-            param = new string[]{ @"C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe", "P00000000057649" };//El separador no se visualiza en este editor
+            //param = new string[]{ @"C:\Users\robert.monterrosa\source\repos\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe", "P00000000057649" };//El separador no se visualiza en este editor
             /*param = new string[] { @"C:\Users\brayan.milian\Documents\Informacion\SIIFGIT\Interactuar\ConsoleApp-FormApp\Ser_Excel_2020\Ser_Excel_2020\bin\Debug\Ser_Excel.exe", "P00001860118602" };*///El separador no se visualiza en este editor
             //_param = param;
             //------------------------------------
